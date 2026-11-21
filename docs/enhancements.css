@@ -1,0 +1,79 @@
+/* StopDEP: alignment, scrollbar and motion */
+html{scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:#d5b700 #161616}
+:root{--paper:#171717;--black:#f3efe6;--yellow:#f0ce22}
+body{background:var(--paper);color:var(--black)}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:24px}
+header.wrap,footer.wrap{padding-inline:24px}
+.studio,.profile-layout,.feature-layout,.install-grid{align-items:stretch}
+.player-shell,.mask-panel{align-self:stretch}
+.mask-panel{padding:20px;border:1px solid #555046;border-radius:12px;background:#23221e}
+.mask-panel label{color:#d3cec2}
+.mask-panel button,.mask-panel select,.play-tabs button,.channel-buttons button,.word-editor textarea{color:var(--black);background:#24231f;border-color:#756c55}
+.mask-panel #applyMask{background:var(--yellow);color:#161616;font-weight:700}
+.play-tabs button[aria-pressed=true],.channel-buttons button[aria-pressed=true]{color:#151515;background:var(--yellow)}
+nav a,.small,.feature-list article,.features,.playground,.statement,.install,details,footer{border-color:#6a6458}
+.brand,.hero h1,.game-title{color:var(--black)}
+.button{background:var(--yellow);border-color:var(--yellow);color:#151515}
+.hero h1 span{color:var(--yellow)}
+.hero .text-link{border-color:var(--yellow)}
+.features,.playground,.statement,.install,.faq{padding-block:64px}
+.feature-list article{background:#24231f}
+.replace-line strong,.word-editor output{color:var(--yellow)}
+.replace-line s{position:relative;text-decoration:none!important;color:#b8b2a6;align-self:flex-start}
+.replace-line s::after{content:"";position:absolute;left:0;right:0;top:52%;height:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .42s ease}
+.words-ready .replace-line s::after{transform:scaleX(1)}
+.words-disabled .replace-line s::after{transform:scaleX(0)}
+.motion-enabled .replace-line strong{opacity:0;transform:translateY(8px);transition:opacity .4s ease .25s,transform .4s ease .25s}
+.motion-enabled .words-ready .replace-line strong{opacity:1;transform:none}
+.statement h2 span{color:var(--yellow);text-decoration-thickness:4px}
+.amounts button{color:var(--black);border-color:#756c55}
+.amounts button[aria-pressed=true]{background:var(--yellow);color:#151515}
+#amountOutput{font-variant-numeric:tabular-nums;min-height:42px}
+*::-webkit-scrollbar{width:8px;height:8px}
+*::-webkit-scrollbar-track{background:#171717}
+*::-webkit-scrollbar-thumb{background:#a59238;border-radius:999px;border:2px solid #171717}
+*::-webkit-scrollbar-thumb:hover{background:#f0ce22}
+.motion-enabled .motion-item{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1);transition-delay:var(--stagger,0ms)}
+.motion-enabled .motion-item.is-visible{opacity:1;transform:none}
+.scroll-reveal{opacity:1;transform:none;transition:none}
+.feature-visual{border-color:#6a6458}
+.profile-label,.profile-toggle,.channel-buttons small{color:inherit}
+#exportDemo{margin-top:auto}
+details p{color:#d3cec2}
+@media(max-width:650px){.wrap,header.wrap,footer.wrap{width:100%;padding-inline:20px}.studio{grid-template-columns:1fr}.mask-panel{display:flex}.features,.playground,.statement,.install,.faq{padding-block:40px}.hero{padding-bottom:32px}.feature-list article{color:#f3efe6}.play-view{min-height:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.motion-enabled .motion-item,.motion-enabled .replace-line strong{opacity:1;transform:none;transition:none}.replace-line s::after{transition:none}*,*::before{animation:none!important}}
+
+.sample-video #sampleSponsor.masked-image{background:#f6f3ed url("replacement-photo.jpg") center/cover no-repeat!important;color:transparent}
+.replace-line s{display:inline-block}
+.replace-line strong{display:block;will-change:auto}
+.words-ready .replace-line:nth-child(2) s::after{transition-delay:160ms}
+.motion-enabled .words-ready .replace-line strong{transition:opacity .4s ease,transform .4s ease}
+.mask-panel .panel-heading{padding-bottom:12px;border-bottom:1px solid #514d40}
+.mask-panel #applyMask{margin-top:8px}
+@media(prefers-reduced-motion:reduce){.replace-line strong{transform:none!important;clip-path:none!important}.replace-line s::after{transition:none!important}}
+
+.profile-scene #profileCover,
+.profile-scene #profileCover.right{
+ background:#171717 url("replacement-photo.jpg") center/100% 100% no-repeat;
+ color:transparent;
+ border:2px solid var(--yellow);
+}
+.profile-scene #profileAd.right{
+ background:#075d2b url("liga.png") center/100% 100% no-repeat;
+}
+/* Display lettering: Cyrillic and Latin share the same family. */
+.brand{font-family:"Unbounded",Inter,sans-serif;font-weight:800;font-size:22px;letter-spacing:-.03em}
+.hero h1{font-family:"Unbounded",Inter,sans-serif;font-weight:900;font-size:clamp(52px,11.3vw,136px);line-height:1.04;letter-spacing:-.04em}
+.hero h1 span{font-size:clamp(22px,4.2vw,50px);line-height:1.2;letter-spacing:-.03em}
+h2{font-family:"Unbounded",Inter,sans-serif;font-weight:800;font-size:clamp(30px,4.8vw,58px);line-height:1.15;letter-spacing:-.035em;text-wrap:balance;overflow-wrap:break-word}
+.faq h2{font-size:clamp(28px,4vw,40px)}
+.game-title,.scene-type{font-family:"Unbounded",Inter,sans-serif;font-weight:800;letter-spacing:-.03em}
+@media(max-width:760px){.brand{font-size:17px}.hero h1{font-size:12.5vw}.hero h1 span{font-size:5.2vw}h2{font-size:clamp(27px,7vw,39px)}.game-title{font-size:29px}}
+
+.display-de{display:inline-block;width:.92em;height:.73em;vertical-align:baseline;overflow:visible} 
+
+
+/* Keep the authentic letter and give its descenders room. */
+.brand{gap:8px;line-height:1.35}.hero h1{line-height:1.16}.hero h1 span{margin-top:12px}.statement h2 span{text-decoration:none;border-bottom:3px solid var(--yellow);padding-bottom:.17em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+.area-organization{padding-block:48px;border-top:1px solid #6a6458}.organization-intro{max-width:65ch;margin:24px 0 32px;color:#d3cec2}.organization-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.organization-grid article{border-top:2px solid var(--yellow);padding-top:18px}.organization-grid h3{margin:0 0 12px;font-size:20px}.organization-grid p{margin:0;color:#d3cec2}@media(max-width:760px){.organization-grid{grid-template-columns:1fr;gap:24px}.area-organization{padding-block:40px}}
