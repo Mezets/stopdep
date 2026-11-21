@@ -1,0 +1,99 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "2.8.3",
+  "description": "__MSG_extensionDescription__",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab",
+    "webRequest",
+    "webNavigation"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "bookmakers",
+        "enabled": true,
+        "path": "rules.json"
+      },
+      {
+        "path": "cases.json",
+        "id": "cases",
+        "enabled": true
+      },
+      {
+        "id": "gambling",
+        "enabled": true,
+        "path": "gambling.json"
+      },
+      {
+        "id": "gambling_extra",
+        "enabled": true,
+        "path": "gambling-extra.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": [
+        "hide.css",
+        "cases.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "js": [
+        "search-domains.js",
+        "search.js",
+        "words.js"
+      ]
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "all_frames": true,
+      "run_at": "document_start",
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "default_locale": "ru",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}
