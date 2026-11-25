@@ -1,8 +1,298 @@
 {
-  "format": "stopdep-community",
+  "format": "stopdep-backup",
   "version": 1,
-  "revision": "2026-11-25.2",
-  "folders": [],
+  "settings": {
+    "hiddenBlocks": [
+      {
+        "createdAt": 1795615348965,
+        "id": "65d28cde-8e11-4b92-8872-d969f49235e6",
+        "image": "https://panels.twitch.tv/panel-71089431-image-7f49b0ee-0e12-4540-b024-81493a60adb3",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lagoda1337",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795615351106,
+        "id": "bc1e385a-fe37-4a93-83de-41b0e3053a47",
+        "image": "https://panels.twitch.tv/panel-71089431-image-86ea94c6-77fc-43ea-805c-55775037126b",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lagoda1337",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795615353764,
+        "id": "e7e7e533-2073-455f-963a-6e8028aa4527",
+        "image": "https://panels.twitch.tv/panel-71089431-image-744935ce-5d67-4fc6-8c11-42fd0fd5b12b",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lagoda1337",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795615357241,
+        "id": "638660e4-b204-49e9-8438-f37ea51e08bd",
+        "image": "https://panels.twitch.tv/panel-71089431-image-96bc82e6-74a6-4b2b-a67e-57e80d484220",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lagoda1337",
+        "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795615360844,
+        "id": "0e1e916a-fd3d-4c27-820c-0870604d663d",
+        "image": "https://panels.twitch.tv/panel-71089431-image-d09ef057-5e4c-49ce-b283-df9631efa0a7",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lagoda1337",
+        "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795623864535,
+        "id": "8fcbf966-7cbc-44a1-a638-40426b913106",
+        "image": "https://panels.twitch.tv/panel-523836820-image-186d5876-612b-4900-9d25-37d83668bdf5",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/mafanyaking",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795623866528,
+        "id": "1039e47b-8285-4002-b729-df090dd36b20",
+        "image": "https://panels.twitch.tv/panel-523836820-image-336a56f9-0f39-4873-98e6-ea945010b58a",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/mafanyaking",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795623868377,
+        "id": "512b2f79-1922-4ede-b2f0-80f9614bcfb4",
+        "image": "https://panels.twitch.tv/panel-523836820-image-936206c4-d2e1-4e7e-b8a6-d511c9164cfb",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/mafanyaking",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795623870865,
+        "id": "f793bc90-ee9b-4a83-8c74-745829b8eddd",
+        "image": "https://panels.twitch.tv/panel-523836820-image-c8b9c4cb-c808-4f0c-8bbb-f24447ae8a59",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/mafanyaking",
+        "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795624619823,
+        "id": "011797e7-1340-4f47-999a-c186fe21bde2",
+        "image": "https://panels.twitch.tv/panel-99899949-image-9b01b12a-ea59-4fb3-bd22-b500f5b5cc47",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/bratishkinoff",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795624621914,
+        "id": "7a146138-1069-4cf0-8f84-7e685cd5d840",
+        "image": "https://panels.twitch.tv/panel-99899949-image-93a86541-2eb4-4ecb-8b56-3bc0117f3a0d",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/bratishkinoff",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795624624165,
+        "id": "cb45ca50-3142-440e-9179-5fc1f4041f1f",
+        "image": "https://panels.twitch.tv/panel-99899949-image-7c0cbb88-c302-4744-a0fe-edb0b5e60aef",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/bratishkinoff",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795635847594,
+        "id": "b1d74100-0dce-49cf-93ef-c37de253989a",
+        "image": "https://panels.twitch.tv/panel-99899949-image-f387ebc4-2f0b-49a4-b363-d2afd4e270de",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/bratishkinoff",
+        "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795636766135,
+        "id": "c7bc7c64-0a4f-47b7-94a5-18e48138c892",
+        "image": "https://panels.twitch.tv/panel-32155044-image-884ad95e-1c1e-4a73-a3a9-44952c30c1b5",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/5opka",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795636769050,
+        "id": "de5720e1-708e-4372-a7db-2019571cfd16",
+        "image": "https://panels.twitch.tv/panel-32155044-image-8d54a2ab-1dc3-4518-bf0b-1fc6e659b7c4",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/5opka",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638361123,
+        "id": "e97836c1-e0bf-4b2b-a601-f5be941358d4",
+        "image": "https://panels.twitch.tv/panel-90185887-image-6ef6d2d7-dca6-4c53-8e59-d7285e8d3dd2",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/synd1cat",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638363754,
+        "id": "f1e352a2-60a8-4431-a1f0-491a2a53bed7",
+        "image": "https://panels.twitch.tv/panel-90185887-image-ab30a27d-86d3-4756-9714-df72e6dd5cf9",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/synd1cat",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638387829,
+        "id": "b7cc50f3-3fa0-4730-8fee-345a73befa23",
+        "image": "https://panels.twitch.tv/panel-48189727-image-79c2303d-cbe0-4a9d-86cd-12c2ff110e01",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/t2x2",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638519729,
+        "id": "258f783a-2332-45d0-8efb-29ef506bae6c",
+        "image": "https://panels.twitch.tv/panel-48189727-image-2d80f416-2c07-420a-923c-6f57df6d37a2",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/t2x2",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638573009,
+        "id": "a4fa8c44-33eb-4c4e-a30d-837598b84ae1",
+        "image": "https://panels.twitch.tv/panel-270698079-image-ad55da2e-a27a-4eaf-8897-74d797a942fe",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/mazellovvv",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638595116,
+        "id": "d238b4a9-51d6-469e-8cf3-74de69ec26ef",
+        "image": "https://panels.twitch.tv/panel-465532551-image-a7312eab-ad2a-45a5-9890-4718576b45cd",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/lenyapudge",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638620306,
+        "id": "b2eac40a-0a01-4b39-8e5c-2007e6a39133",
+        "image": "https://panels.twitch.tv/panel-402093335-image-c05f4062-d12e-4fdc-8ed2-75c431191362",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/dangerlyoha",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638635432,
+        "id": "39633fe8-d1d0-4093-b6f4-a319b523915c",
+        "image": "https://panels.twitch.tv/panel-162757011-image-735b95cf-f490-43be-80a2-8d08193619fa",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/leva2k",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638637556,
+        "id": "4437cd45-ab95-4890-94d7-a5ba95bbf418",
+        "image": "https://panels.twitch.tv/panel-162757011-image-a9ac5eb9-c095-4fe4-a704-4a7de77e1fda",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/leva2k",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638640002,
+        "id": "1760f48d-bad9-4907-ada6-c56d060d42c5",
+        "image": "https://panels.twitch.tv/panel-162757011-image-30af7f62-5cc5-42e6-8fe5-403c38d3b064",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/leva2k",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638641945,
+        "id": "be2e7b7b-e7c1-4600-91ec-98788b5e1654",
+        "image": "https://panels.twitch.tv/panel-162757011-image-40d67fe8-b896-4edc-84f7-b2307b914c99",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/leva2k",
+        "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638644086,
+        "id": "8a1b75b3-b077-4d8a-84e1-608a6065757b",
+        "image": "https://panels.twitch.tv/panel-162757011-image-1556c0ed-73e7-407b-9b91-c768b3dd2d28",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/leva2k",
+        "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638685737,
+        "id": "4dffbc65-ecf2-4fd1-94f0-32c0cd25919a",
+        "image": "https://panels.twitch.tv/panel-39154778-image-28fd5675-53cb-4b5d-bf67-cd10964f50b1",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/recrent",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638689126,
+        "id": "aaf2071e-2e55-42a5-89d7-a815790ddbac",
+        "image": "https://panels.twitch.tv/panel-39154778-image-31f38eb0-4147-40de-9af5-62ee963b503e",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/recrent",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638692730,
+        "id": "4057ec33-7366-404b-9f02-24012f09d043",
+        "image": "https://panels.twitch.tv/panel-39154778-image-789dd406-9f78-4059-959b-8ee69d1016bc",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/recrent",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638695471,
+        "id": "993c8905-bdbf-41c7-95ab-b851ee217bb3",
+        "image": "https://panels.twitch.tv/panel-39154778-image-e851f72b-23b4-437f-8e4e-efe8f31289a0",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/recrent",
+        "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638712048,
+        "id": "d23259f8-ea7a-454f-aa76-1ada1f53c2aa",
+        "image": "https://panels.twitch.tv/panel-47966045-image-7b2d7b3c-575b-4776-b50c-baa73c79fbf5",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/by_owl",
+        "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638714075,
+        "id": "642d6929-94d5-4bea-a541-ff5d7815c0d0",
+        "image": "https://panels.twitch.tv/panel-47966045-image-4350759e-ecc4-4361-8877-e614c0bf9add",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/by_owl",
+        "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638716031,
+        "id": "6f159c13-3b89-4300-bfd2-981c062d58db",
+        "image": "https://panels.twitch.tv/panel-47966045-image-deba7e77-5f57-45f1-bea8-6adec6e28b78",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/by_owl",
+        "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      },
+      {
+        "createdAt": 1795638718993,
+        "id": "7f2f1b1b-e14b-4e8f-acbc-33ee1866404d",
+        "image": "https://panels.twitch.tv/panel-47966045-image-278f01ad-1e41-44e1-9f2d-0a3210abc9bb",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/by_owl",
+        "selector": "[data-test-selector=\"masonry_container_selector\"] > div:nth-of-type(4)"
+      },
+      {
+        "createdAt": 1795638721634,
+        "id": "7d9c7f2d-0fa4-46e2-8294-9a27ef9a936b",
+        "image": "https://panels.twitch.tv/panel-47966045-image-dcb4e27c-c7e7-4025-b1a9-b25e9e2207a3",
+        "label": "Содержимое панели",
+        "page": "https://www.twitch.tv/by_owl",
+        "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+      }
+    ]
+  },
   "masks": {
     "mask:03854f73-2e7e-4aeb-8df7-b13a950a684c": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
@@ -442,6 +732,24 @@
       "x": 0.8987068965517241,
       "y": 0.010217113665389528
     },
+    "mask:91f92fa6-dc92-4a87-9a6f-8e15f38ad9fd": {
+      "anchor": "body:nth-child(4) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
+      "color": "#151515",
+      "createdAt": 1795639478198,
+      "height": 0.03919510061242345,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09028871391076115,
+      "x": 0.4414698162729659,
+      "y": 0.4812580927384077
+    },
     "mask:950fcfba-c054-493d-95fc-7e762b5a7e6f": {
       "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
       "color": "#151515",
@@ -628,295 +936,5 @@
       "x": 0.43582508092784494,
       "y": 0.69165054494608
     }
-  },
-  "hiddenBlocks": [
-    {
-      "createdAt": 1795615348965,
-      "id": "65d28cde-8e11-4b92-8872-d969f49235e6",
-      "image": "https://panels.twitch.tv/panel-71089431-image-7f49b0ee-0e12-4540-b024-81493a60adb3",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795615351106,
-      "id": "bc1e385a-fe37-4a93-83de-41b0e3053a47",
-      "image": "https://panels.twitch.tv/panel-71089431-image-86ea94c6-77fc-43ea-805c-55775037126b",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795615353764,
-      "id": "e7e7e533-2073-455f-963a-6e8028aa4527",
-      "image": "https://panels.twitch.tv/panel-71089431-image-744935ce-5d67-4fc6-8c11-42fd0fd5b12b",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795615357241,
-      "id": "638660e4-b204-49e9-8438-f37ea51e08bd",
-      "image": "https://panels.twitch.tv/panel-71089431-image-96bc82e6-74a6-4b2b-a67e-57e80d484220",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795615360844,
-      "id": "0e1e916a-fd3d-4c27-820c-0870604d663d",
-      "image": "https://panels.twitch.tv/panel-71089431-image-d09ef057-5e4c-49ce-b283-df9631efa0a7",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795623864535,
-      "id": "8fcbf966-7cbc-44a1-a638-40426b913106",
-      "image": "https://panels.twitch.tv/panel-523836820-image-186d5876-612b-4900-9d25-37d83668bdf5",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/mafanyaking",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795623866528,
-      "id": "1039e47b-8285-4002-b729-df090dd36b20",
-      "image": "https://panels.twitch.tv/panel-523836820-image-336a56f9-0f39-4873-98e6-ea945010b58a",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/mafanyaking",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795623868377,
-      "id": "512b2f79-1922-4ede-b2f0-80f9614bcfb4",
-      "image": "https://panels.twitch.tv/panel-523836820-image-936206c4-d2e1-4e7e-b8a6-d511c9164cfb",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/mafanyaking",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795623870865,
-      "id": "f793bc90-ee9b-4a83-8c74-745829b8eddd",
-      "image": "https://panels.twitch.tv/panel-523836820-image-c8b9c4cb-c808-4f0c-8bbb-f24447ae8a59",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/mafanyaking",
-      "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795624619823,
-      "id": "011797e7-1340-4f47-999a-c186fe21bde2",
-      "image": "https://panels.twitch.tv/panel-99899949-image-9b01b12a-ea59-4fb3-bd22-b500f5b5cc47",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795624621914,
-      "id": "7a146138-1069-4cf0-8f84-7e685cd5d840",
-      "image": "https://panels.twitch.tv/panel-99899949-image-93a86541-2eb4-4ecb-8b56-3bc0117f3a0d",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795624624165,
-      "id": "cb45ca50-3142-440e-9179-5fc1f4041f1f",
-      "image": "https://panels.twitch.tv/panel-99899949-image-7c0cbb88-c302-4744-a0fe-edb0b5e60aef",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795635847594,
-      "id": "b1d74100-0dce-49cf-93ef-c37de253989a",
-      "image": "https://panels.twitch.tv/panel-99899949-image-f387ebc4-2f0b-49a4-b363-d2afd4e270de",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795636766135,
-      "id": "c7bc7c64-0a4f-47b7-94a5-18e48138c892",
-      "image": "https://panels.twitch.tv/panel-32155044-image-884ad95e-1c1e-4a73-a3a9-44952c30c1b5",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/5opka",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795636769050,
-      "id": "de5720e1-708e-4372-a7db-2019571cfd16",
-      "image": "https://panels.twitch.tv/panel-32155044-image-8d54a2ab-1dc3-4518-bf0b-1fc6e659b7c4",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/5opka",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638361123,
-      "id": "e97836c1-e0bf-4b2b-a601-f5be941358d4",
-      "image": "https://panels.twitch.tv/panel-90185887-image-6ef6d2d7-dca6-4c53-8e59-d7285e8d3dd2",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/synd1cat",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638363754,
-      "id": "f1e352a2-60a8-4431-a1f0-491a2a53bed7",
-      "image": "https://panels.twitch.tv/panel-90185887-image-ab30a27d-86d3-4756-9714-df72e6dd5cf9",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/synd1cat",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638387829,
-      "id": "b7cc50f3-3fa0-4730-8fee-345a73befa23",
-      "image": "https://panels.twitch.tv/panel-48189727-image-79c2303d-cbe0-4a9d-86cd-12c2ff110e01",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/t2x2",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638519729,
-      "id": "258f783a-2332-45d0-8efb-29ef506bae6c",
-      "image": "https://panels.twitch.tv/panel-48189727-image-2d80f416-2c07-420a-923c-6f57df6d37a2",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/t2x2",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638573009,
-      "id": "a4fa8c44-33eb-4c4e-a30d-837598b84ae1",
-      "image": "https://panels.twitch.tv/panel-270698079-image-ad55da2e-a27a-4eaf-8897-74d797a942fe",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/mazellovvv",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638595116,
-      "id": "d238b4a9-51d6-469e-8cf3-74de69ec26ef",
-      "image": "https://panels.twitch.tv/panel-465532551-image-a7312eab-ad2a-45a5-9890-4718576b45cd",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/lenyapudge",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638620306,
-      "id": "b2eac40a-0a01-4b39-8e5c-2007e6a39133",
-      "image": "https://panels.twitch.tv/panel-402093335-image-c05f4062-d12e-4fdc-8ed2-75c431191362",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/dangerlyoha",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638635432,
-      "id": "39633fe8-d1d0-4093-b6f4-a319b523915c",
-      "image": "https://panels.twitch.tv/panel-162757011-image-735b95cf-f490-43be-80a2-8d08193619fa",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/leva2k",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638637556,
-      "id": "4437cd45-ab95-4890-94d7-a5ba95bbf418",
-      "image": "https://panels.twitch.tv/panel-162757011-image-a9ac5eb9-c095-4fe4-a704-4a7de77e1fda",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/leva2k",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638640002,
-      "id": "1760f48d-bad9-4907-ada6-c56d060d42c5",
-      "image": "https://panels.twitch.tv/panel-162757011-image-30af7f62-5cc5-42e6-8fe5-403c38d3b064",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/leva2k",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638641945,
-      "id": "be2e7b7b-e7c1-4600-91ec-98788b5e1654",
-      "image": "https://panels.twitch.tv/panel-162757011-image-40d67fe8-b896-4edc-84f7-b2307b914c99",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/leva2k",
-      "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638644086,
-      "id": "8a1b75b3-b077-4d8a-84e1-608a6065757b",
-      "image": "https://panels.twitch.tv/panel-162757011-image-1556c0ed-73e7-407b-9b91-c768b3dd2d28",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/leva2k",
-      "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638685737,
-      "id": "4dffbc65-ecf2-4fd1-94f0-32c0cd25919a",
-      "image": "https://panels.twitch.tv/panel-39154778-image-28fd5675-53cb-4b5d-bf67-cd10964f50b1",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/recrent",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638689126,
-      "id": "aaf2071e-2e55-42a5-89d7-a815790ddbac",
-      "image": "https://panels.twitch.tv/panel-39154778-image-31f38eb0-4147-40de-9af5-62ee963b503e",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/recrent",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638692730,
-      "id": "4057ec33-7366-404b-9f02-24012f09d043",
-      "image": "https://panels.twitch.tv/panel-39154778-image-789dd406-9f78-4059-959b-8ee69d1016bc",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/recrent",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638695471,
-      "id": "993c8905-bdbf-41c7-95ab-b851ee217bb3",
-      "image": "https://panels.twitch.tv/panel-39154778-image-e851f72b-23b4-437f-8e4e-efe8f31289a0",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/recrent",
-      "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638712048,
-      "id": "d23259f8-ea7a-454f-aa76-1ada1f53c2aa",
-      "image": "https://panels.twitch.tv/panel-47966045-image-7b2d7b3c-575b-4776-b50c-baa73c79fbf5",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/by_owl",
-      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638714075,
-      "id": "642d6929-94d5-4bea-a541-ff5d7815c0d0",
-      "image": "https://panels.twitch.tv/panel-47966045-image-4350759e-ecc4-4361-8877-e614c0bf9add",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/by_owl",
-      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638716031,
-      "id": "6f159c13-3b89-4300-bfd2-981c062d58db",
-      "image": "https://panels.twitch.tv/panel-47966045-image-deba7e77-5f57-45f1-bea8-6adec6e28b78",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/by_owl",
-      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    },
-    {
-      "createdAt": 1795638718993,
-      "id": "7f2f1b1b-e14b-4e8f-acbc-33ee1866404d",
-      "image": "https://panels.twitch.tv/panel-47966045-image-278f01ad-1e41-44e1-9f2d-0a3210abc9bb",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/by_owl",
-      "selector": "[data-test-selector=\"masonry_container_selector\"] > div:nth-of-type(4)"
-    },
-    {
-      "createdAt": 1795638721634,
-      "id": "7d9c7f2d-0fa4-46e2-8294-9a27ef9a936b",
-      "image": "https://panels.twitch.tv/panel-47966045-image-dcb4e27c-c7e7-4025-b1a9-b25e9e2207a3",
-      "label": "Содержимое панели",
-      "page": "https://www.twitch.tv/by_owl",
-      "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
-    }
-  ]
+  }
 }
