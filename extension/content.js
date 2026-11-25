@@ -36,7 +36,8 @@ function start(root) {
   }
 
   function attachHost() {
-    if (!host.isConnected) root.append(host);
+    const target=document.fullscreenElement||root;
+    if(host.parentElement!==target)target.append(host);
   }
 
   function queueLayout() {
@@ -1195,18 +1196,29 @@ function start(root) {
   if (window === top) {
     addEventListener('scroll', handleScroll, { capture: true, passive: true });
     addEventListener('resize', queueLayout);
+    function playerModeChanged(){
+      attachHost();sourceCache.clear();render();queueLayout();
+      setTimeout(queueLayout,80);setTimeout(queueLayout,300);
+    }
+    document.addEventListener('fullscreenchange',playerModeChanged);
+    document.addEventListener('webkitfullscreenchange',playerModeChanged);
+    const playerResize=new ResizeObserver(()=>queueLayout());
+    const watchedPlayers=new WeakSet();
+    function observePlayers(){for(const video of document.querySelectorAll('video'))if(!watchedPlayers.has(video)){watchedPlayers.add(video);playerResize.observe(video);video.addEventListener('loadedmetadata',playerModeChanged);}}
+    observePlayers();
     if (isTwitch) {
       let playerFrame = 0;
       const tracked = new Map();
       function trackPlayers() {
         playerFrame = 0;
+        observePlayers();
         let changed = false;
         for (const [key, { mask }] of rendered) {
-          if (mask.source?.kind !== 'video-player') continue;
+          if (!['video-player','video'].includes(mask.source?.kind)) continue;
           const video = imageAnchor(mask);
           const rect = video?.getBoundingClientRect();
           const geometry = rect
-            ? [rect.left, rect.top, rect.width, rect.height].join(',')
+            ? [rect.left, rect.top, rect.width, rect.height, video.videoWidth, video.videoHeight, document.fullscreenElement?.tagName].join(',')
             : '';
           if (tracked.get(key) !== geometry) {
             tracked.set(key, geometry);
@@ -1215,7 +1227,7 @@ function start(root) {
         }
         if (changed) queueLayout();
         if (
-          [...rendered.values()].some(({ mask }) => mask.source?.kind === 'video-player')
+          [...rendered.values()].some(({ mask }) => ['video-player','video'].includes(mask.source?.kind))
         )
           playerFrame = requestAnimationFrame(trackPlayers);
       }
