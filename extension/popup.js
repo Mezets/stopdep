@@ -42,6 +42,7 @@ function report(message = '') {
 }
 
 async function refresh() {
+  await renderHiddenBlocks();
   const data = await chrome.storage.local.get(null);
   const kopecks = Object.entries(data)
     .filter(([key]) => key.startsWith('saving:'))
@@ -68,18 +69,12 @@ async function refresh() {
   $('undoLast').disabled = !data.lastMaskAction;
   const folders = Array.isArray(data.maskFolders) ? data.maskFolders : [];
   const selectedFolder = $('folderFilter').value;
-  $('folderFilter').replaceChildren(
-    ...[
-      ['*', t('Все области')],
-      ['', t('Без папки')],
-      ...folders.map((f) => [f.id, f.name]),
-    ].map(([value, name]) => {
-      const o = document.createElement('option');
-      o.value = value;
-      o.textContent = name;
-      return o;
-    })
-  );
+  const option=(value,name)=>{const node=document.createElement('option');node.value=value;node.textContent=name;return node;};
+  const twitchFolders=new Set(Object.entries(data).filter(([key,mask])=>key.startsWith('mask:')&&twitchProfile(mask.page)).map(([,mask])=>mask.folderId));
+  const twitchGroup=document.createElement('optgroup');twitchGroup.label='Twitch';
+  const siteGroup=document.createElement('optgroup');siteGroup.label=t('Сайты и другие папки');
+  for(const folder of folders)(twitchFolders.has(folder.id)?twitchGroup:siteGroup).append(option(folder.id,folder.name));
+  $('folderFilter').replaceChildren(option('*',t('Все области')),option('',t('Без папки')),...(twitchGroup.children.length?[twitchGroup]:[]),...(siteGroup.children.length?[siteGroup]:[]));
   $('folderFilter').value =
     selectedFolder === '*' ||
     selectedFolder === '' ||
@@ -105,13 +100,13 @@ async function refresh() {
   $('folderEditForm').hidden = !currentFolder;
   if (document.activeElement !== $('folderRename'))
     $('folderRename').value = currentFolder?.name || '';
+  const normalizePage=address=>{try{const u=new URL(address);return u.origin+u.pathname;}catch{return address;}};
+  const chosenPage=$('maskPageFilter').value||'current';
+  const pages=[...new Set(Object.entries(data).filter(([key])=>key.startsWith('mask:')).map(([,mask])=>normalizePage(mask.page)))].sort();
+  $('maskPageFilter').replaceChildren(...[['current',t('Текущая страница')],['all',t('Все страницы')],...pages.map(url=>{const u=new URL(url);return [url,u.hostname.replace(/^www\./,'')+u.pathname];})].map(([value,label])=>{const o=document.createElement('option');o.value=value;o.textContent=label;return o;}));
+  $('maskPageFilter').value=['current','all',...pages].includes(chosenPage)?chosenPage:'all';
   const search = $('maskSearch').value.trim().toLowerCase();
-  const masks = Object.entries(data)
-    .filter(
-      ([key, mask]) =>
-        key.startsWith('mask:') &&
-        (sameSite(mask.page) || (mask.source && !mask.pageOnly))
-    )
+  const masks = Object.entries(data).filter(([key,mask])=>key.startsWith('mask:')&&($('maskPageFilter').value==='all'||normalizePage(mask.page)===($('maskPageFilter').value==='current'?normalizePage(page):$('maskPageFilter').value)))
     .filter(
       ([, mask]) =>
         !search ||
@@ -131,7 +126,10 @@ async function refresh() {
         $('folderFilter').value === '*' ||
         (mask.folderId || '') === $('folderFilter').value
     );
-  $('clearPageMasks').disabled = !masks.length;
+  $('maskListCount').textContent = t('Областей') + ': ' + masks.length;
+  $('clearPageMasks').disabled = !Object.entries(data).some(
+    ([key, mask]) => key.startsWith('mask:') && sameSite(mask.page)
+  );
   const editor = $('editActions');
   $('saved').replaceChildren(
     ...masks.map(([key, mask], index) => {
@@ -153,6 +151,31 @@ async function refresh() {
         { image: 'картинка', blur: 'размытие', solid: 'заливка' }[mask.mode] || 'размытие'
       );
       label.append(kind);
+      const address = document.createElement('small');
+      address.className = 'mask-address';
+      try {
+        const url = new URL(mask.page);
+        address.textContent = url.hostname + url.pathname;
+      } catch {
+        address.textContent = '';
+      }
+      label.append(address);
+      const source = mask.source;
+      if (
+        source?.url &&
+        ['img', 'resource', 'background'].includes(source.kind) &&
+        /^https?:/.test(source.url)
+      ) {
+        const preview = document.createElement('div');
+        preview.className = 'mask-thumbnail';
+        const image = document.createElement('img');
+        image.src = source.url;
+        image.alt = t('Источник области');
+        image.loading = 'lazy';
+        image.onerror = () => preview.remove();
+        preview.append(image);
+        item.append(preview);
+      }
       const timestamp = document.createElement('small');
       timestamp.className = 'mask-created';
       const date = Number.isFinite(mask.createdAt) ? new Date(mask.createdAt) : null;
@@ -241,10 +264,7 @@ for (const button of document.querySelectorAll('[data-tab]')) {
       tab.setAttribute('aria-pressed', String(selected));
       $(tab.dataset.tab).hidden = !selected;
     }
-    if (button.dataset.tab === 'regions' && !catalogRequested) {
-      catalogRequested = true;
-      $('browseImages').onclick();
-    }
+    $('savedMoney').hidden = button.dataset.tab !== 'filters';
   };
 }
 
@@ -306,6 +326,8 @@ async function startPicking(pageRegion) {
       color: $('coverColor').value,
       strength: Number($('strength').value),
     };
+    const [currentTab]=await chrome.tabs.query({active:true,currentWindow:true});
+    if(currentTab?.id){activeTab=currentTab;const url=new URL(currentTab.url);page=url.origin+url.pathname+url.search;options.page=page;}
     let response = await chrome.tabs
       .sendMessage(activeTab.id, options, { frameId: 0 })
       .catch(() => null);
@@ -580,6 +602,8 @@ $('exportSettings').onclick = async () => {
     const settings = Object.fromEntries(
       controls.map((key) => [key, data[key] !== false])
     );
+    settings.hiddenBlocks = data.hiddenBlocks || [];
+    settings.twitchProfiles = data.twitchProfiles || {};
     settings.maskFolders = data.maskFolders || [];
     settings.wordReplacements = data.wordReplacements || {};
     settings.customDomains = data.customDomains || [];
@@ -709,6 +733,38 @@ $('backupFile').onchange = async () => {
             f.name.trim()
         )
         .map((f) => ({ id: f.id, name: f.name.trim().slice(0, 80) }));
+    if (Array.isArray(backup.settings?.hiddenBlocks))
+      values.hiddenBlocks = backup.settings.hiddenBlocks.filter(
+        (r) =>
+          r &&
+          typeof r.id === 'string' &&
+          typeof r.page === 'string' &&
+          /^https?:\/\//.test(r.page) &&
+          typeof r.selector === 'string' &&
+          r.selector.length < 2000
+      );
+    if (
+      backup.settings?.twitchProfiles &&
+      typeof backup.settings.twitchProfiles === 'object'
+    )
+      values.twitchProfiles = Object.fromEntries(
+        Object.entries(backup.settings.twitchProfiles)
+          .filter(
+            ([channel, p]) =>
+              /^[a-z0-9_]{1,25}$/.test(channel) && p && typeof p === 'object'
+          )
+          .map(([channel, p]) => [
+            channel,
+            Object.fromEntries(
+              Object.entries(p).filter(
+                ([key, value]) =>
+                  ['bet', 'cases', 'gambling', 'banners', 'masks', 'blocks'].includes(
+                    key
+                  ) && typeof value === 'boolean'
+              )
+            ),
+          ])
+      );
     let count = 0;
     for (const [key, mask] of Object.entries(backup.masks || {})) {
       if (!/^mask:[a-z0-9-]+$/i.test(key) || !validBackupMask(mask)) continue;
@@ -1217,3 +1273,78 @@ $('bulkMove').onchange = async () => {
     report(error.message);
   }
 };
+
+async function blockPage() {
+  const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+  if (!tabs[0]?.url) return null;
+  const url = new URL(tabs[0].url);
+  return { tab: tabs[0], page: url.origin + url.pathname };
+}
+async function renderHiddenBlocks() {
+  const current = await blockPage();
+  const data = await chrome.storage.local.get('hiddenBlocks');
+  const allPages=$('hiddenBlockScope').value==='all';
+  const rules = (data.hiddenBlocks || []).filter((r) => allPages || r.page === current?.page);
+  $('restoreBlocks').textContent=t(allPages?'Вернуть все блоки на всех сайтах':'Вернуть всё на этой странице');
+  $('restoreBlocks').disabled = !rules.length;
+  if (!rules.length) {
+    const empty = document.createElement('li');
+    empty.className = 'empty-blocks';
+    empty.textContent = t(allPages?'Нет скрытых блоков':'Нет скрытых блоков на этой странице');
+    $('hiddenBlockList').replaceChildren(empty);
+    return;
+  }
+  $('hiddenBlockList').replaceChildren(
+    ...rules.map((rule) => {
+      const item = document.createElement('li');
+      if (rule.image) {
+        const image = document.createElement('img');
+        image.src = rule.image;
+        image.alt = '';
+        image.loading = 'lazy';
+        item.append(image);
+      }
+      const label = document.createElement('span');
+      label.textContent = rule.label || rule.selector;
+      label.title = rule.selector;
+      const origin=document.createElement('a');origin.href=rule.page;origin.target='_blank';origin.rel='noopener noreferrer';try{const url=new URL(rule.page);origin.textContent=url.hostname+url.pathname;}catch{origin.textContent=rule.page;}
+      const date=document.createElement('small');date.textContent=Number.isFinite(rule.createdAt)?new Intl.DateTimeFormat(locale==='en'?'en-GB':'ru-RU',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).format(new Date(rule.createdAt)):t('Дата добавления неизвестна');
+      const info=document.createElement('div');info.className='hidden-block-info';info.append(label,date,origin);
+      const restore = document.createElement('button');
+      restore.textContent = t('Вернуть');
+      restore.onclick = async () => {
+        const latest = await chrome.storage.local.get('hiddenBlocks');
+        await chrome.storage.local.set({
+          hiddenBlocks: (latest.hiddenBlocks || []).filter((r) => r.id !== rule.id),
+        });
+      };
+      item.append(info, restore);
+      return item;
+    })
+  );
+}
+$('pickBlock').onclick = async () => {
+  try {
+    const current = await blockPage();
+    if (!current) throw Error('Открой страницу сайта.');
+    await chrome.tabs.sendMessage(
+      current.tab.id,
+      { type: 'pick-hidden-block' },
+      { frameId: 0 }
+    );
+    window.close();
+  } catch {
+    report('Обнови вкладку сайта и попробуй снова.');
+  }
+};
+$('restoreBlocks').onclick = async () => {
+  const current = await blockPage();
+  const data = await chrome.storage.local.get('hiddenBlocks');
+  await chrome.storage.local.set({
+    hiddenBlocks: $('hiddenBlockScope').value==='all'?[]:(data.hiddenBlocks || []).filter((r) => r.page !== current?.page),
+  });
+};
+
+$('hiddenBlockScope').onchange=()=>renderHiddenBlocks().catch(error=>report(error.message));
+
+$('maskPageFilter').onchange=()=>refresh().catch(error=>report(error.message));

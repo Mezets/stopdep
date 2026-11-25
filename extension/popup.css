@@ -1068,3 +1068,195 @@ select option {
   border-color: var(--accent);
   background: #292719;
 }
+
+.block-tools {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.block-tools h2 {
+  font-size: 14px;
+}
+.block-tools p {
+  font-size: 12px;
+  color: #bcb7aa;
+}
+#hiddenBlockList {
+  list-style: none;
+  padding: 0;
+  max-height: 240px;
+  overflow: auto;
+}
+#hiddenBlockList li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #201f1c;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 6px 0;
+}
+#hiddenBlockList img {
+  width: 44px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+#hiddenBlockList span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#hiddenBlockList button {
+  font-size: 12px;
+}
+#profiles h2 {
+  font-size: 17px;
+}
+#profiles p,
+#profiles small,
+.community-settings p {
+  font-size: 12px;
+  color: #bcb7aa;
+}
+#profileAdd {
+  display: flex;
+  gap: 6px;
+  margin: 16px 0;
+}
+#profileAdd input {
+  min-width: 0;
+  flex: 1;
+  background: #18181b;
+  color: #f3efe6;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px;
+  font: inherit;
+}
+#profileAdd button {
+  font-size: 12px;
+}
+#profileSelect {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px;
+}
+#profileOptions .row span {
+  max-width: 240px;
+}
+#profileReset {
+  margin-block: 12px;
+}
+.community-settings {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+nav {
+  flex-wrap: wrap;
+}
+nav button {
+  flex: 1;
+  min-width: 52px;
+}
+
+.block-tools #pickBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  height: auto;
+  padding: 12px 16px;
+  line-height: 1.4;
+  white-space: normal;
+  margin: 12px 0;
+  box-sizing: border-box;
+  transform: none;
+}
+.block-tools {
+  display: flow-root;
+}
+.block-tools p {
+  margin-bottom: 16px;
+}
+.hidden-blocks-panel,
+.twitch-settings {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 12px;
+}
+.hidden-blocks-panel summary,
+.twitch-settings summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  min-height: 24px;
+}
+.twitch-settings #profiles {
+  padding-top: 12px;
+}
+.twitch-settings h2 {
+  display: none;
+}
+.list-count {
+  color: #bcb7aa;
+  font-size: 12px;
+}
+.mask-address {
+  overflow-wrap: anywhere;
+  color: #bcb7aa;
+}
+.mask-thumbnail {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #18181b;
+}
+.mask-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#saved .mask-select {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+#saved .mask-label {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+}
+#saved .mask-actions {
+  width: 100%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+#hiddenBlockList .empty-blocks {
+  font-size: 12px;
+  color: #bcb7aa;
+}
+.hidden-blocks-panel #restoreBlocks {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.hidden-block-info{display:grid;gap:5px;flex:1;min-width:0}.hidden-block-info small,.hidden-block-info a{font-size:11px;overflow-wrap:anywhere;color:#bcb7aa}.hidden-block-info a{color:#e4d582}.profile-rule-list{list-style:none;padding:0;margin:0 0 16px;display:grid;gap:8px}.profile-rule-list li{display:grid;gap:6px;background:#201f1c;border:1px solid var(--line);border-radius:8px;padding:10px}.profile-rule-list small{font-size:11px;color:#bcb7aa}.profile-rule-list a{font-size:12px;color:#e4d582;overflow-wrap:anywhere}.profile-rule-list .mask-actions{justify-content:flex-end;flex-wrap:wrap}.profile-rule-list strong{font-size:13px}
+
+.block-scope-label{display:grid;gap:6px;margin:12px 0;font-size:12px}.block-scope-label select{width:100%;padding:8px}
+
+.profile-rule-list .hidden-block-preview{display:flex;align-items:center;justify-content:center;min-height:70px;max-height:140px;overflow:hidden;background:#121212;border-radius:6px;padding:8px}.hidden-block-preview img{display:block;max-width:100%;max-height:124px;object-fit:contain}.block-source-name{overflow-wrap:anywhere;word-break:break-word}
+
+.list-fold{border:1px solid var(--line);border-radius:8px;padding:10px;margin:10px 0}.list-fold>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:28px;font-size:12px;font-weight:600;list-style:none}.list-fold>summary::-webkit-details-marker{display:none}.list-fold>summary:before{content:"▸";color:var(--accent)}.list-fold[open]>summary:before{content:"▾"}.list-fold>summary>span:first-child{flex:1}.fold-action{font-size:11px;color:#d9cd85}.list-fold .profile-rule-list{margin-top:12px;margin-bottom:0}.list-fold #saved{margin-top:8px}
+
+.area-section{border:1px solid var(--line);border-radius:8px;padding:12px;margin:0 0 12px}.area-section>summary{cursor:pointer;font-size:13px;font-weight:600;min-height:24px}.area-section[open]>summary{margin-bottom:14px}.area-subsection{border-top:1px solid var(--line);padding-top:10px;margin:12px 0}.area-subsection>summary{font-size:12px;color:#c9c3ad;cursor:pointer;min-height:26px}.area-section #maskSearch{margin-top:8px}.area-section label:has(#folderFilter){display:grid;gap:6px;font-size:12px}.area-section #folderFilter{width:100%;padding:8px}.area-section>button,.area-subsection>button{width:100%;margin:6px 0}.area-section .modes{margin-top:12px}
+
+.reset-settings{border-top:1px solid var(--line);margin-top:22px;padding-top:16px}.reset-settings summary{cursor:pointer;font-weight:600}.reset-settings>button{width:100%;margin-top:14px}.reset-settings small{display:block;font-size:11px;color:#bcb7aa;margin-top:5px}.reset-settings p{font-size:12px;color:#bcb7aa}#resetConfirmation{padding:12px;border:1px solid var(--accent);border-radius:8px;margin-top:14px}#resetConfirmation>div{display:flex;gap:8px;flex-wrap:wrap}
+
+.page-filter-label{display:grid;gap:7px;font-size:12px;margin:12px 0}.page-filter-label select{width:100%;padding:9px}#saved .mask-folder,#saved .mask-select,.bulk-tools{display:none!important}#saved .mask-label{width:100%}

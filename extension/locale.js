@@ -1,4 +1,44 @@
-const english = {
+const english = {"Страница":"Page","Текущая страница":"Current page","Все страницы":"All pages",
+"Создать замазку":"Create a mask",
+"Сохранённые замазки":"Saved masks",
+"Скрытые блоки":"Hidden blocks",
+"Развернуть":"Expand",
+"Свернуть":"Collapse",
+"Папки и перенос":"Folders and moving",
+"Удаление и отмена":"Delete and undo",
+"Сайты и другие папки":"Sites and other folders",
+"Сброс данных":"Reset data",
+"Сбросить все замазки":"Reset all masks",
+"Сбросить скрытые блоки":"Reset hidden blocks",
+"Сбросить замены слов":"Reset word replacements",
+"Сбросить добавленные сайты":"Reset custom sites",
+"Подтвердить сброс":"Confirm reset",
+"Канал или ссылка Twitch":"Channel name or Twitch URL",
+"Добавить канал":"Add channel",
+"Канал":"Channel",
+"Вернуть общие настройки":"Restore global settings",
+"Букмекерские баннеры":"Sportsbook banners",
+"Баннеры кейсов":"Case banners",
+"Баннеры казино":"Casino banners",
+"Скрывать распознанные баннеры и ссылки":"Hide recognized banners and links",
+"Сохранённые области":"Saved areas",
+"Для этого канала пока ничего не сохранено":"Nothing saved for this channel yet",
+"На всех сайтах":"On all sites",
+"Показать":"Show",
+"Обновлять общий набор с GitHub":"Update community filters from GitHub",
+"Проверить обновления фильтров":"Check filter updates",
+"Поиск по сайту, файлу или дате":"Search by site, file or date","Свернуть":"Collapse","Развернуть":"Expand","Скрытые блоки":"Hidden blocks","На этой странице":"On this page","На всех сайтах":"On all sites","Вернуть все блоки на всех сайтах":"Restore all blocks on all sites","Нет скрытых блоков":"No hidden blocks",
+  Областей: 'Areas',
+  'Источник области': 'Area source',
+  'Нет скрытых блоков на этой странице': 'No hidden blocks on this page',
+  'Скрытые блоки этой страницы': 'Hidden blocks on this page',
+  'Профили Twitch': 'Twitch profiles',
+  'Скрытые блоки': 'Hidden blocks',
+  'Выбрать блок на странице': 'Pick a block on the page',
+  'Вернуть всё на этой странице': 'Restore all on this page',
+  Вернуть: 'Restore',
+  'Выбери баннер, панель или другой блок. Он будет скрыт на этой странице.':
+    'Pick a banner, panel or another block to hide on this page.',
   'Переместить выбранные…': 'Move selected…',
   'Переместить выбранные': 'Move selected',
   Выбрано: 'Selected',
@@ -92,6 +132,30 @@ const english = {
   'Область уже удалена.': 'This area has already been deleted.',
 };
 const releases = [
+['2.10.0','Заменили папки автоматическим списком страниц и каналов.','Replaced folders with an automatic page and channel list.'],
+['2.9.9','Добавили отдельный сброс замазок, блоков, замен и сайтов в настройках.','Added separate resets for masks, blocks, replacements and custom sites in Settings.'],
+['2.9.8','Выделили папки каналов в группу Twitch.','Grouped channel folders under Twitch.'],
+['2.9.7','Упростили раздел областей: создание, списки и управление папками отдельно.','Simplified Areas into creation, saved lists and folder management.'],
+['2.9.6','Добавили сворачивание списков и сохранение их состояния.','Added collapsible lists with saved state.'],
+['2.9.5','Добавили превью скрытых блоков в профилях Twitch.','Added hidden block previews in Twitch profiles.'],
+['2.9.4','Добавили список скрытых блоков всех сайтов. Убрали автозапуск каталога. Счётчик оставили в фильтрах.','Added all-site hidden blocks. Disabled automatic catalog opening. Savings now appear only in Filters.'],
+['2.9.3','Пофиксили пустые места после скрытия панелей Twitch.','Fixed empty gaps after hiding Twitch panels.'],
+['2.9.2','Добавили управление областями в профилях Twitch. Добавили дату, время и адрес скрытых блоков.','Added area controls in Twitch profiles and hidden block timestamps and links.'],
+  [
+    '2.9.1',
+    'Перенесли профили Twitch в области. Исправили список масок и кнопки.',
+    'Moved Twitch profiles into Areas. Fixed mask list and buttons.',
+  ],
+  [
+    '2.9.0',
+    'Добавили профили каналов Twitch. Добавили общий набор областей и обновления с GitHub.',
+    'Added Twitch channel profiles, community masks and GitHub updates.',
+  ],
+  [
+    '2.8.4',
+    'Добавили скрытие блоков, список скрытого и восстановление.',
+    'Added block hiding, a hidden block list and restoration.',
+  ],
   [
     '2.8.3',
     'Включили Twitch по умолчанию. Добавили перенос нескольких областей в папку.',
@@ -361,6 +425,7 @@ for (const node of document.querySelectorAll('[aria-label], [alt]')) {
 function setLanguage(language) {
   locale = language === 'en' ? 'en' : 'ru';
   document.documentElement.lang = locale;
+  queueMicrotask(()=>window.translateDynamicUI?.());
   document.title = t('СтопДЕП');
   for (const button of document.querySelectorAll('[data-language]')) {
     button.setAttribute('aria-pressed', String(button.dataset.language === locale));
@@ -382,3 +447,10 @@ function setLanguage(language) {
     })
   );
 }
+
+(() => {
+ const records=new WeakMap();
+ function translate(node,attr){const value=attr?node.getAttribute(attr):node.data;if(!value?.trim())return;let entry=records.get(node);if(!entry){entry={};records.set(node,entry);}const key=attr||'text';let old=entry[key];if(!old||(value!==old.original&&value!==old.translated)){const source=value.trim();if(!english[source])return;old=entry[key]={original:value,source,translated:value.replace(source,english[source])};}const next=locale==='en'?old.translated:old.original;if(next!==value){if(attr)node.setAttribute(attr,next);else node.data=next;}}
+ window.translateDynamicUI=()=>{const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);while(walker.nextNode()){const n=walker.currentNode;if(!n.parentElement?.closest('script,style,textarea,[contenteditable]'))translate(n);}for(const node of document.querySelectorAll('[placeholder],[aria-label],[title]'))for(const attr of ['placeholder','aria-label','title'])if(node.hasAttribute(attr))translate(node,attr);};
+ let pending=false;new MutationObserver(()=>{if(pending)return;pending=true;queueMicrotask(()=>{pending=false;window.translateDynamicUI();});}).observe(document.body,{childList:true,subtree:true,characterData:true});
+})();

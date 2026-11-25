@@ -642,13 +642,14 @@ function start(root) {
 
   function render() {
     currentPage = pageKey();
+    const profile=stopdepProfile(settings);
     const enabled = settings.enabled !== false;
     for (const key of ['bet', 'cases', 'gambling', 'banners']) {
-      root.classList.toggle('stopbk-' + key, enabled && settings[key] !== false);
+      root.classList.toggle('stopbk-' + key, enabled && (profile[key] ?? settings[key]) !== false);
     }
     if (window !== top) return;
     if (!enabled) pickLayer?.remove();
-    const matching = enabled
+    const matching = enabled && profile.masks !== false
       ? Object.entries(settings).filter(
           ([key, value]) =>
             key.startsWith('mask:') &&

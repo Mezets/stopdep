@@ -29,6 +29,11 @@
     <p id="savedMoney" class="money-total"></p>
     <main>
       <section id="filters">
+        <div class="block-tools">
+          <h2>Скрытые блоки</h2>
+          <p>Выбери баннер, панель или другой блок. Он будет скрыт на этой странице.</p>
+          <button id="pickBlock" class="primary">Выбрать блок на странице</button>
+        </div>
         <label class="row"
           >Букмекеры, включая Winline<input type="checkbox" id="bet" role="switch"
         /></label>
@@ -43,6 +48,37 @@
         /></label>
       </section>
       <section id="regions" hidden>
+        <details class="hidden-blocks-panel">
+          <summary>Скрытые блоки</summary><label class="block-scope-label">Показать<select id="hiddenBlockScope"><option value="page">На этой странице</option><option value="all">На всех сайтах</option></select></label>
+          <ul id="hiddenBlockList"></ul>
+          <button id="restoreBlocks">Вернуть всё на этой странице</button>
+        </details>
+        <details class="twitch-settings">
+          <summary>Профили Twitch</summary>
+          <div id="profiles">
+            <h2>Профили Twitch</h2>
+            <p>
+              Переключатели скрытия для конкретного канала. Блокировка открытия азартных
+              сайтов остаётся общей.
+            </p>
+            <form id="profileAdd">
+              <input
+                id="profileChannel"
+                placeholder="Канал или ссылка Twitch"
+                aria-label="Канал Twitch"
+                maxlength="160"
+                required
+              /><button type="submit">Добавить канал</button>
+            </form>
+            <label>Канал<select id="profileSelect"></select></label>
+            <div id="profileOptions"></div>
+            <button id="profileReset">Вернуть общие настройки</button
+            ><small
+              >Изменения применяются сразу. Настройки замен слов общие для всех
+              каналов.</small
+            >
+          </div>
+        </details>
         <div class="modes">
           <label><input type="radio" name="mode" value="solid" /> Закрасить</label
           ><label><input type="radio" name="mode" value="blur" checked /> Размытие</label
@@ -128,6 +164,7 @@
           </div>
           <select id="bulkMove" aria-label="Переместить выбранные" disabled></select>
         </div>
+        <label class="page-filter-label">Страница<select id="maskPageFilter"><option value="current">Текущая страница</option><option value="all">Все страницы</option></select></label><p id="maskListCount" class="list-count" role="status"></p>
         <ul id="saved" aria-label="Сохранённые области"></ul>
         <div id="editorHome">
           <form id="editActions" hidden>
@@ -157,6 +194,16 @@
         </div>
       </section>
       <section id="settings" hidden>
+        <div class="community-settings">
+          <label class="row"
+            >Обновлять общий набор с GitHub<input
+              id="communityEnabled"
+              type="checkbox"
+              role="switch"
+          /></label>
+          <p id="communityStatus" role="status"></p>
+          <button id="communityUpdate">Проверить обновления фильтров</button>
+        </div>
         <label>Замены</label>
         <div id="wordRows"></div>
         <label
@@ -229,11 +276,13 @@
             </div>
           </div>
         </div>
+<details class="reset-settings"><summary>Сброс данных</summary><p>Каждый пункт сбрасывается отдельно. Перед удалением можно экспортировать резервную копию.</p><button type="button" data-reset="masks">Сбросить все замазки</button><small>Удалить сохранённые области. Папки останутся.</small><button type="button" data-reset="blocks">Сбросить скрытые блоки</button><small>Вернуть блоки на всех сайтах.</small><button type="button" data-reset="words">Сбросить замены слов</button><small>Вернуть встроенные замены, удалить свои.</small><button type="button" data-reset="sites">Сбросить добавленные сайты</button><small>Очистить свой список. Встроенные фильтры останутся.</small><div id="resetConfirmation" hidden><p id="resetQuestion"></p><div><button id="resetConfirm" type="button">Подтвердить сброс</button><button id="resetCancel" type="button">Отмена</button></div></div><p id="resetResult" role="status"></p></details>
       </section>
       <section id="changes" hidden><ul id="releaseList"></ul></section>
       <p id="status" role="status" hidden></p>
     </main>
     <script src="locale.js"></script>
     <script src="popup.js"></script>
+    <script src="list-folds.js"></script><script src="areas-layout.js"></script><script src="profiles-ui.js"></script><script src="reset-settings.js"></script>
   </body>
 </html>

@@ -417,3 +417,5 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
     .catch(() => respond({}));
   return true;
 });
+
+importScripts('community-updates.js');

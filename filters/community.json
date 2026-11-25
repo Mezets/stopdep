@@ -1,0 +1,628 @@
+{
+  "format": "stopdep-community",
+  "version": 1,
+  "revision": "2026-11-25.1",
+  "folders": [
+    {
+      "id": "9aa5d8c0-cfee-43d7-8f68-da1e97096e2b",
+      "name": "SLAY"
+    },
+    {
+      "id": "f980e710-da78-44a0-b30f-09146accf915",
+      "name": "Ladoga1337"
+    },
+    {
+      "id": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
+      "name": "derzko69"
+    },
+    {
+      "id": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
+      "name": "bratishkinOFF"
+    },
+    {
+      "id": "30b64d94-a618-4cc0-9412-b8664855ba0a",
+      "name": "leva2k"
+    },
+    {
+      "id": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
+      "name": "Nix"
+    },
+    {
+      "id": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
+      "name": "T2x2"
+    }
+  ],
+  "masks": {
+    "mask:094bbced-ccb1-4809-bb80-d1e01f1ffc93": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
+      "height": 0.10727969348659004,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/derzko69",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.12428160919540229,
+      "x": 0.8757183908045977,
+      "y": 0.08812260536398467
+    },
+    "mask:0c09500c-b779-4308-81ea-21f5768181fd": {
+      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.047809680694159785,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.06049610205527995,
+      "x": 0.5494596510046545,
+      "y": 0.4118413239603885
+    },
+    "mask:190df67d-740d-4f67-af36-6ac8ffced1eb": {
+      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.047809680694159785,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-4.C--sjgbx.webp"
+      },
+      "strength": 48,
+      "width": 0.03678817016875132,
+      "x": 0.4072120596854828,
+      "y": 0.6131936330377152
+    },
+    "mask:1e7de86d-899e-477b-a7d8-122b9a88c694": {
+      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.015936560231386596,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.02289041699388971,
+      "x": 0.4521753787806233,
+      "y": 0.34932097228341025
+    },
+    "mask:262faf72-dc79-45d2-b8c0-17a662b92def": {
+      "anchor": "body:nth-child(2) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
+      "color": "#151515",
+      "height": 0.04199475065616798,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09501312335958005,
+      "x": 0.43832020997375326,
+      "y": 0.477525226013415
+    },
+    "mask:2926bdf4-2a56-47ea-b8d1-6cb716886020": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
+      "height": 0.22349936143039592,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/derzko69",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09051724137931035,
+      "x": 0.8951149425287356,
+      "y": 0.20561941251596424
+    },
+    "mask:3ac7e207-d649-4cba-94f6-862f2a2e51eb": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "height": 0.3128991060025543,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/rostikfacekid",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09339080459770115,
+      "x": 0.9058908045977011,
+      "y": 0.1979565772669221
+    },
+    "mask:3ba4a98e-54af-4016-9346-704b7fda2c3c": {
+      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.06006857317984178,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-6.CXkCKU8L.webp"
+      },
+      "strength": 48,
+      "width": 0.04823337866569618,
+      "x": 0.7472982550232727,
+      "y": 0.2855747313578639
+    },
+    "mask:3e257e4d-b3a6-4d55-a74d-55d25b9b7ee8": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
+      "height": 0.09182209469153517,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/t2x2",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.15333572453371594,
+      "x": 0.840163199426112,
+      "y": 0.22238163558106167
+    },
+    "mask:43800c65-cb27-4011-95d9-a4f6204e4513": {
+      "bitmapSize": {
+        "height": 57,
+        "width": 92
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.3377192982456141,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/metacorp.BVNB_CKq.svg"
+      },
+      "strength": 48,
+      "width": 0.9891304347826086,
+      "x": 0.010869565217391304,
+      "y": 0.6622807017543859
+    },
+    "mask:47a1a8e4-57db-4ca9-a5bc-1f2c1c7e06ef": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "blurVersion": 2,
+      "color": "#151515",
+      "folderId": "f980e710-da78-44a0-b30f-09146accf915",
+      "height": 0.11877394636015326,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.1257183908045977,
+      "x": 0.015086206896551725,
+      "y": 0.03065134099616858
+    },
+    "mask:48bc6c73-ede1-4078-bbb8-e1e86e2ee47a": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "30b64d94-a618-4cc0-9412-b8664855ba0a",
+      "height": 0.28991060025542786,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/leva2k",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.16163793103448276,
+      "x": 0.0028735632183908046,
+      "y": 0.04086845466155811
+    },
+    "mask:56511e82-0257-48cc-ae44-4e23e7636185": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "height": 0.15197956577266922,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.08979885057471264,
+      "x": 0.9102011494252874,
+      "y": 0.010217113665389528
+    },
+    "mask:5dab08ca-869a-46e9-9a9d-4eaffc3a4442": {
+      "bitmapSize": {
+        "height": 1080,
+        "width": 1920
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.0582010582010582,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/hero-2560.CvykKcKc.webp"
+      },
+      "strength": 48,
+      "width": 0.13988095238095238,
+      "x": 0.4226190476190476,
+      "y": 0.4695767195767196
+    },
+    "mask:6f670437-9857-435e-be6f-bf06b209920c": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
+      "height": 0.08751793400286945,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/t2x2",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.13235294117647062,
+      "x": 0.003272955523672819,
+      "y": 0.005738880918220882
+    },
+    "mask:7031e3b8-6e3b-41cf-8ec8-deab1e69e953": {
+      "bitmapSize": null,
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.06349206349206349,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "video",
+        "url": "https://static.slay-award.ru/a6d728ad/videos/hero.mp4"
+      },
+      "strength": 48,
+      "width": 0.11011904761904756,
+      "x": 0.43154761904761907,
+      "y": 0.4642857142857143
+    },
+    "mask:7236e2e8-b4e9-450b-9c88-a226aa54780e": {
+      "bitmapSize": {
+        "height": 82,
+        "width": 349
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.6840855106888362,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/winline.ClqRlpwq.webp"
+      },
+      "strength": 48,
+      "width": 0.6667596855960187,
+      "x": 0.09822798939584206,
+      "y": 0.16152019002375298
+    },
+    "mask:75e38fd7-6552-44aa-8eca-c3f814f83003": {
+      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.042906123699886986,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-6.CXkCKU8L.webp"
+      },
+      "strength": 48,
+      "width": 0.05477349780680752,
+      "x": 0.7456632252379949,
+      "y": 0.2969142069071197
+    },
+    "mask:7c285a97-882b-468d-8224-a36118586d1e": {
+      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.014710670982818396,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-4.C--sjgbx.webp"
+      },
+      "strength": 48,
+      "width": 0.025342961671806465,
+      "x": 0.4129346639339552,
+      "y": 0.6165648284712778
+    },
+    "mask:a27c5857-39d3-47f7-a2d8-c288d17fd5d6": {
+      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.02819545271706859,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-2.DFx0EUc3.webp"
+      },
+      "strength": 48,
+      "width": 0.02861302124236214,
+      "x": 0.4480878043174287,
+      "y": 0.6990058804374892
+    },
+    "mask:a740ccb3-e8dd-4f87-8ab8-7876b504ce57": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "height": 0.20945083014048532,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/sasavot",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11063218390804598,
+      "x": 0.0028735632183908046,
+      "y": 0.5606641123882503
+    },
+    "mask:b2552e30-abeb-44df-9ad0-e8e1fa7f737d": {
+      "bitmapSize": {
+        "height": 1142,
+        "width": 2048
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.06938537236260528,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/new-ticker.B7DA-5c5.webp"
+      },
+      "strength": 48,
+      "width": 0.11011904761904756,
+      "x": 0.43154761904761907,
+      "y": 0.3349178550579601
+    },
+    "mask:b6d58fbf-4f37-4d36-933b-5eaee072c07e": {
+      "bitmapSize": {
+        "height": 110,
+        "width": 336
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.23636363636363636,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/preloader.BXfJmC26.webp"
+      },
+      "strength": 48,
+      "width": 0.3244047619047619,
+      "x": 0.30357142857142855,
+      "y": 0.06136363636363636
+    },
+    "mask:c5a705b9-f91a-43cd-a188-38cbcfefa8b7": {
+      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.06129446242840998,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.06294864673319671,
+      "x": 0.5478246212193767,
+      "y": 0.4023406822839849
+    },
+    "mask:cc1ba403-4833-441b-a7e4-530ab800f582": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
+      "height": 0.24776500638569604,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/nix",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09123563218390805,
+      "x": 0.9087643678160919,
+      "y": 0.02937420178799489
+    },
+    "mask:cf1559e5-16c3-4647-b104-4f0081736298": {
+      "bitmapSize": {
+        "height": 78,
+        "width": 308
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.8878205128205128,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/lunacy.B-YIHx4q.webp"
+      },
+      "strength": 48,
+      "width": 0.9967532467532467,
+      "x": 0.003246753246753247,
+      "y": 0.11217948717948718
+    },
+    "mask:d1aaa38f-4ff9-45e3-bc68-b8c0bc426d8e": {
+      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "height": 0.018388338728522996,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.031065565920278895,
+      "x": 0.4489053192100676,
+      "y": 0.34594977684984773
+    },
+    "mask:e31faaab-ca28-4e08-8e06-b473db2c57fa": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
+      "height": 0.15197956577266922,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.13290229885057472,
+      "x": 0.8613505747126436,
+      "y": 0.1839080459770115
+    },
+    "mask:e4d69022-3d13-44b5-b7eb-9823ddce9ed0": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
+      "height": 0.1251596424010217,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.15445402298850575,
+      "x": 0.8433908045977011,
+      "y": 0.6756066411238825
+    },
+    "mask:ef4410ef-b667-4a55-83d3-cc3141c25df4": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
+      "height": 0.08812260536398467,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/derzko69",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.1400862068965517,
+      "x": 0.004310344827586207,
+      "y": 0.007662835249042145
+    },
+    "mask:f68218eb-ed37-438c-bb45-e1344c4e7c7f": {
+      "bitmapSize": null,
+      "blurVersion": 2,
+      "color": "#151515",
+      "height": 0.06349206349206349,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "video",
+        "url": "https://static.slay-award.ru/a6d728ad/videos/hero-mobile.mp4"
+      },
+      "strength": 48,
+      "width": 0.0982142857142857,
+      "x": 0.4375,
+      "y": 0.4642857142857143
+    },
+    "mask:fa1e69eb-59c2-42ae-b5fb-af8a856a5a18": {
+      "anchor": "body:nth-child(3) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
+      "color": "#151515",
+      "height": 0.0662583843686206,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.13070866141732285,
+      "x": 0.42992125984251967,
+      "y": 0.46819305920093324
+    },
+    "mask:faf69eb3-0eee-4cb6-a6f1-cc50a7bc684d": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "folderId": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
+      "height": 0.0970625798212005,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/nix",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.14798850574712644,
+      "x": 0.8477011494252874,
+      "y": 0.4521072796934866
+    }
+  }
+}
