@@ -1,13 +1,22 @@
 (() => {
-  if (!/^(?:www\.)?google\.(?:com|ru|[a-z]{2}|com\.[a-z]{2}|co\.[a-z]{2})$/.test(location.hostname)
-      || location.pathname !== '/search') return;
+  if (
+    !/^(?:www\.)?google\.(?:com|ru|[a-z]{2}|com\.[a-z]{2}|co\.[a-z]{2})$/.test(
+      location.hostname
+    ) ||
+    location.pathname !== '/search'
+  )
+    return;
 
   const marker = 'data-stopbk-search';
   let stopped = false;
   let scanTimer;
   let observer;
   function contextAlive() {
-    try { return Boolean(chrome.runtime.id); } catch { return false; }
+    try {
+      return Boolean(chrome.runtime.id);
+    } catch {
+      return false;
+    }
   }
   function stop() {
     stopped = true;
@@ -17,7 +26,7 @@
   }
   function requestScan() {
     if (stopped) return;
-    scan().catch(error => {
+    scan().catch((error) => {
       if (!contextAlive() || String(error).includes('context invalidated')) stop();
       else console.error('StopDEP search filtering:', error);
     });
@@ -36,13 +45,19 @@
 
   function category(url, host) {
     for (const [key, domains] of Object.entries(searchDomains)) {
-      if (domains.some((domain) => host === domain || host.endsWith('.' + domain))) return key;
+      if (domains.some((domain) => host === domain || host.endsWith('.' + domain)))
+        return key;
     }
     const profile = url.pathname.toLowerCase().split('/')[1];
-    if ((host === 'www.twitch.tv' || host === 'twitch.tv' || host === 't.me') && profile === 'casebattle_official') return 'cases';
+    if (
+      (host === 'www.twitch.tv' || host === 'twitch.tv' || host === 't.me') &&
+      profile === 'casebattle_official'
+    )
+      return 'cases';
   }
 
-  const bettingBrands = /(?<![\p{L}\p{N}])(?:winline|винлайн|1\s*win|1\s*вин|bet[\s-]*boom|бет[\s-]*бум|fon[\s-]*bet|фон[\s-]*бет|bet[\s-]*city|бет[\s-]*сити|лига ставок|olimp[\s-]*bet|олимп[\s-]*бет|1x[\s-]*bet|1xставка|parimatch|париматч|melbet|мелбет|mostbet|мостбет|bet365)(?![\p{L}\p{N}])/giu;
+  const bettingBrands =
+    /(?<![\p{L}\p{N}])(?:winline|винлайн|1\s*win|1\s*вин|bet[\s-]*boom|бет[\s-]*бум|fon[\s-]*bet|фон[\s-]*бет|bet[\s-]*city|бет[\s-]*сити|лига ставок|olimp[\s-]*bet|олимп[\s-]*бет|1x[\s-]*bet|1xставка|parimatch|париматч|melbet|мелбет|mostbet|мостбет|bet365)(?![\p{L}\p{N}])/giu;
 
   function blurNames() {
     const results = document.querySelector('#search');
@@ -51,7 +66,13 @@
     const matches = [];
     while (walker.nextNode()) {
       const node = walker.currentNode;
-      if (!node.parentElement || node.parentElement.closest('.stopbk-bet-brand, script, style, textarea, [contenteditable]')) continue;
+      if (
+        !node.parentElement ||
+        node.parentElement.closest(
+          '.stopbk-bet-brand, script, style, textarea, [contenteditable]'
+        )
+      )
+        continue;
       const brands = [...node.data.matchAll(bettingBrands)];
       if (brands.length) matches.push([node, brands]);
     }
@@ -74,18 +95,26 @@
 
   let revision = 0;
   async function scan() {
-    if (!contextAlive()) { stop(); return; }
-    // Text replacement handles sportsbook labels without cosmetic blur.
+    if (!contextAlive()) {
+      stop();
+      return;
+    }
+
     const version = ++revision;
     const pending = new Map();
-    for (const marked of document.querySelectorAll('[' + marker + ']')) marked.removeAttribute(marker);
+    for (const marked of document.querySelectorAll('[' + marker + ']'))
+      marked.removeAttribute(marker);
     for (const heading of document.querySelectorAll('#search h3')) {
       const link = heading.closest('a[href]');
       if (!link) continue;
       const card = link.closest('.MjjYud, .Gx5Zad, .g');
       if (!card) continue;
       let url;
-      try { url = destination(link.href); } catch { continue; }
+      try {
+        url = destination(link.href);
+      } catch {
+        continue;
+      }
       if (!url) continue;
       const host = url.hostname.toLowerCase().replace(/\.$/, '');
       const match = category(url, host);
@@ -98,7 +127,10 @@
     if (!pending.size) return;
     let hosts;
     try {
-      hosts = await chrome.runtime.sendMessage({ type: 'search-gambling', hosts: [...pending.keys()] });
+      hosts = await chrome.runtime.sendMessage({
+        type: 'search-gambling',
+        hosts: [...pending.keys()],
+      });
     } catch (error) {
       if (!contextAlive() || String(error).includes('context invalidated')) stop();
       return;
@@ -119,5 +151,10 @@
     }, 200);
   });
   requestScan();
-  observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['href'] });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['href'],
+  });
 })();

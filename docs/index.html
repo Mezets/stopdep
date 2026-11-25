@@ -1,8 +1,375 @@
-<!doctype html><html lang="ru" data-type="software"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="page-type" content="software"><meta name="site-kind" content="software"><meta name="description" content="СтопДЕП блокирует сайты букмекеров и казино, скрывает рекламу и позволяет закрыть логотип внутри фото или видео."><meta name="theme-color" content="#171717"><title>СтопДЕП — блокировка букмекеров, казино и рекламы</title><link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800;900&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="enhancements.css"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:title" content="СтопДЕП — убери букмекеров из браузера"><meta property="og:description" content="Блокировка сайтов казино и кейсов, маски на рекламе и замены слов. Расширение для Chrome и Edge."><meta name="twitter:card" content="summary"><meta name="twitter:title" content="СтопДЕП"><meta name="twitter:description" content="Блокировка азартных сайтов и рекламы в браузере"></head><body>
-<a class="skip" href="#main">К содержимому</a><header class="wrap"><a class="brand" href="#"><img src="icon.png" width="36" height="36" alt="">СтопДЕП</a><nav aria-label="Навигация"><a href="#features">Возможности</a><a href="#install">Установка</a><a href="https://t.me/mezets1337">Telegram</a></nav><a class="button small" href="StopDEP.zip" download>Скачать</a></header>
-<main id="main"><section class="hero wrap" data-enter><div class="hand-note">меньше соблазнов —<br>больше свободы</div><img class="cat-art" src="cat.png" alt="Чёрный кот с жёлтыми цветами" width="480" height="290"><div class="hero-copy"><h1>СтопДЕП<span>Не дай рекламе шанс</span></h1><p>Букмекеры, казино и кейсы. СтопДЕП блокирует сайты и помогает закрыть рекламу там, где ты смотришь и читаешь.</p><div class="actions"><a class="button" href="StopDEP.zip" download>Скачать СтопДЕП</a><a class="text-link" href="#install">Как установить</a></div><small>Для Chrome и Edge · версия 2.8.3</small></div><div class="demo"><div class="browser-bar"><span></span><span></span><span></span><p>Твой браузер</p></div><div class="demo-content"><div class="demo-nav">Трансляция <span>Чат</span></div><div class="stream"><div class="play-scene"><span class="live">В эфире</span><div class="scene-type">ТВОЙ<br>СТРИМ.</div><button id="ad" class="ad" aria-label="Закрыть рекламный логотип"><span>BET</span><small>Бонус к депозиту</small></button><div class="mask" id="mask" hidden>Закрыто СтопДЕП</div></div></div><div class="demo-tools"><span id="demoStatus" role="status">Нажми на рекламу в примере</span><button id="reset">Сбросить</button></div><div class="extension"><img src="icon.png" alt="" width="28" height="28"><div><b>СтопДЕП</b><small>Фото, видео и страницы</small></div><span class="enabled">Включён</span></div></div></div></section>
-<section id="features" class="features"><div class="wrap"><h2>Чистим твой браузер</h2><div class="feature-layout"><div class="feature-visual"><div class="replace-line"><s>Лига ставок</s><strong>Лига остатков</strong></div><div class="replace-line"><s>Upgrader</s><strong>Даунгрейдер кошелька</strong></div><label class="toggle-row">Замены слов <input type="checkbox" id="wordToggle" checked aria-label="Включить пример замен"></label></div><div class="feature-list"><article><h3>Блокировка сайтов</h3><p>Встроенные списки букмекеров, казино и кейсов. Дополнительные домены можно добавить самостоятельно.</p></article><article><h3>Маска на логотипе</h3><p>Выдели участок фото, видео или страницы. Размой его, закрась или закрой своей картинкой.</p></article><article><h3>Свои слова и правила</h3><p>Редактируй замены слов и сохраняй области для каналов Twitch. Обработка Twitch включена по умолчанию.</p></article></div></div></div></section>
-<section class="area-organization wrap"><h2>Области по папкам</h2><p class="organization-intro">Назови маски так, чтобы сразу находить нужную. Собери их в папки и переноси несколько областей за один раз.</p><div class="organization-grid"><article><h3>Свои названия</h3><p>Переименовывай области и папки. Поиск находит маски по названию, папке, сайту, файлу или дате.</p></article><article><h3>Перенос одним выбором</h3><p>Отметь нужные области или выбери все и укажи папку. При удалении папки маски остаются в «Без папки».</p></article><article><h3>Всё в резервной копии</h3><p>Экспортируй настройки, области и папки в JSON. Импорт восстанавливает названия и распределение по папкам.</p></article></div></section>
-<section id="try" class="playground wrap"><h2>Заметил лого? Скрой.</h2><div class="play-tabs" aria-label="Демонстрации"><button data-view="area" aria-pressed="true">Маски на видео</button><button data-view="words" aria-pressed="false">Замены слов</button><button data-view="profiles" aria-pressed="false">Профили Twitch</button></div><div id="areaView" class="play-view"><div class="studio"><div class="player-shell"><div class="player-top"><span class="live">В эфире</span><span>Вечерний стрим</span><span class="player-clock">00:42:18</span></div><div class="sample-video"><div class="game-scene"><div class="game-sun"></div><div class="game-ridge"></div><div class="game-ridge near"></div><span class="game-title">AFTER<br>HOURS</span></div><div id="sampleSponsor" aria-label="Пример рекламного баннера"></div><div class="video-caption">Хороший вечер без лишней рекламы</div></div><div class="player-bottom"><span>Пауза</span><div></div><span>1080p</span><span>Звук включён</span></div></div><aside class="mask-panel"><div class="panel-heading"><img src="icon.png" width="28" height="28" alt=""><strong>Область на видео</strong></div><label for="maskMode">Чем закрыть</label><select id="maskMode"><option value="blur">Размытие</option><option value="solid">Заливка</option><option value="image">Картинка СтопДЕП</option></select><label class="power-label" for="blurPower">Сила размытия<output id="powerNumber">12</output></label><input id="blurPower" type="range" min="2" max="24" value="12"><button id="applyMask" type="button">Применить размытие</button></aside></div></div><div id="wordsView" class="play-view" hidden><div class="word-editor"><img class="side-pet side-cat" src="wet-cat.png" alt="" loading="lazy"><div><label for="wordInput">Текст на странице</label><textarea id="wordInput" rows="4">Лига ставок и Upgrader предлагают бонус к депозиту.</textarea></div><div><label for="wordResult">После включения СтопДЕП</label><output id="wordResult"></output></div></div></div><div id="profilesView" class="play-view" hidden><div class="profile-layout"><img class="side-pet side-dog" src="suit-dog.png" alt="" loading="lazy"><div><p class="profile-label">Выбери канал</p><div class="channel-buttons"><button data-channel="one" aria-pressed="true"><img class="avatar" src="bu5terenko.png" alt=""><span>bu5terenko<small>Реклама слева</small></span></button><button data-channel="two" aria-pressed="false"><img class="avatar second" src="sasich.png" alt=""><span>sasich<small>Реклама справа</small></span></button></div><label class="profile-toggle">Закрывать рекламу<input id="profileEnabled" type="checkbox"></label><p id="profileFeedback" role="status"></p></div><div class="profile-player"><div class="player-top"><span class="live">В эфире</span><strong id="profileName">bu5terenko</strong></div><div class="profile-scene"><div class="game-scene"><div class="game-sun"></div><div class="game-ridge"></div><div class="game-ridge near"></div></div><div id="profileAd" aria-label="Пример рекламного баннера"></div><span id="profileCover">Закрыто СтопДЕП</span></div></div></div></div></section><section class="statement"><div class="wrap"><h2>Сохранили тебе<br><span>деньги :3</span></h2><p>Вместо сайта со ставками — картинка и вопрос, сколько ты собирался внести. Выбранная сумма попадает в локальный счётчик СтопДЕП.</p><div class="amounts" aria-label="Пример суммы"><button data-amount="50">50 ₽</button><button data-amount="100">100 ₽</button><button data-amount="250">250 ₽</button><button data-amount="1000">1 000 ₽</button></div><output id="amountOutput" aria-live="polite">Попробуй выбрать сумму</output></div></section>
-<section id="install" class="install wrap"><h2>Установить СтопДЕП</h2><div class="install-grid"><div><p>Расширение пока устанавливается из ZIP. Папку после установки нужно сохранить на компьютере.</p><a class="button" href="StopDEP.zip" download>Скачать СтопДЕП</a></div><ol><li><strong>Распакуй архив</strong><p>В выбранной папке должен лежать manifest.json.</p></li><li><strong>Открой расширения браузера</strong><p><code>chrome://extensions</code> или <code>edge://extensions</code></p></li><li><strong>Включи режим разработчика</strong><p>Нажми «Загрузить распакованное расширение» и выбери папку СтопДЕП.</p></li><li><strong>Обнови открытые вкладки</strong><p>Закрепи СтопДЕП в панели браузера и выбери нужные фильтры.</p></li></ol></div></section>
-<section class="faq wrap"><h2>Остались вопросы?</h2><details><summary>Можно ли закрыть часть картинки?</summary><p>Да. Выбери файл в «Загруженных изображениях» или выдели область прямо на странице.</p></details><details><summary>Как разложить размытия по папкам?</summary><p>Во вкладке «Области» создай папку. Отметь маски и выбери её в «Переместить выбранные…». Для одной области можно выбрать папку прямо в её карточке. Названия областей редактируются там же.</p></details><details><summary>Что с другими расширениями Twitch?</summary><p>Обработка Twitch включена по умолчанию. Если ты уже отключал её, твой выбор сохранится. Переключатель находится в настройках. Для поиска конфликтов есть диагностика.</p></details><details><summary>Куда отправляются настройки?</summary><p>Маски и параметры хранятся в профиле браузера. Картинки на странице блокировки загружаются из Pinterest и зависят от его доступности.</p></details><details><summary>Как обновить СтопДЕП?</summary><p>Замени файлы в той же папке, нажми «Обновить» на карточке расширения и перезагрузи вкладки.</p></details></section></main><footer class="wrap"><a class="brand" href="#">СтопДЕП</a><p>Твой браузер. Твои правила.</p><a href="https://t.me/mezets1337">Автор · @mezets1337</a></footer><script src="main.js"></script><script src="enhancements.js"></script><script src="entrance.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru" data-type="software">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="page-type" content="software" />
+    <meta name="site-kind" content="software" />
+    <meta
+      name="description"
+      content="СтопДЕП блокирует сайты букмекеров и казино, скрывает рекламу и позволяет закрыть логотип внутри фото или видео."
+    />
+    <meta name="theme-color" content="#171717" />
+    <title>СтопДЕП — блокировка букмекеров, казино и рекламы</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800;900&family=Caveat:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="enhancements.css" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="СтопДЕП — убери букмекеров из браузера" />
+    <meta
+      property="og:description"
+      content="Блокировка сайтов казино и кейсов, маски на рекламе и замены слов. Расширение для Chrome и Edge."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="СтопДЕП" />
+    <meta
+      name="twitter:description"
+      content="Блокировка азартных сайтов и рекламы в браузере"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+    <header class="wrap">
+      <a class="brand" href="#"
+        ><img src="icon.png" width="36" height="36" alt="" />СтопДЕП</a
+      >
+      <nav aria-label="Навигация">
+        <a href="#features">Возможности</a><a href="#install">Установка</a>
+      </nav>
+      <a class="button small" href="StopDEP.zip" download>Скачать</a>
+    </header>
+    <main id="main">
+      <section class="hero wrap" data-enter>
+        <div class="hand-note">меньше соблазнов —<br />больше свободы</div>
+        <img
+          class="cat-art"
+          src="cat.png"
+          alt="Чёрный кот с жёлтыми цветами"
+          width="480"
+          height="290"
+        />
+        <div class="hero-copy">
+          <h1>СтопДЕП<span>Не дай рекламе шанс</span></h1>
+          <p>
+            Букмекеры, казино и кейсы. СтопДЕП блокирует сайты и помогает закрыть рекламу
+            там, где ты смотришь и читаешь.
+          </p>
+          <div class="actions">
+            <a class="button" href="StopDEP.zip" download>Скачать СтопДЕП</a
+            ><a class="text-link" href="#install">Как установить</a>
+          </div>
+          <small>Для Chrome и Edge · версия 2.8.3</small>
+        </div>
+        <div class="demo">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <p>Твой браузер</p>
+          </div>
+          <div class="demo-content">
+            <div class="demo-nav">Трансляция <span>Чат</span></div>
+            <div class="stream">
+              <div class="play-scene">
+                <span class="live">В эфире</span>
+                <div class="scene-type">ТВОЙ<br />СТРИМ.</div>
+                <button id="ad" class="ad" aria-label="Закрыть рекламный логотип">
+                  <span>BET</span><small>Бонус к депозиту</small>
+                </button>
+                <div class="mask" id="mask" hidden>Закрыто СтопДЕП</div>
+              </div>
+            </div>
+            <div class="demo-tools">
+              <span id="demoStatus" role="status">Нажми на рекламу в примере</span
+              ><button id="reset">Сбросить</button>
+            </div>
+            <div class="extension">
+              <img src="icon.png" alt="" width="28" height="28" />
+              <div><b>СтопДЕП</b><small>Фото, видео и страницы</small></div>
+              <span class="enabled">Включён</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="features">
+        <div class="wrap">
+          <h2>Чистим твой браузер</h2>
+          <div class="feature-layout">
+            <div class="feature-visual">
+              <div class="replace-line">
+                <s>Лига ставок</s><strong>Лига остатков</strong>
+              </div>
+              <div class="replace-line">
+                <s>Upgrader</s><strong>Даунгрейдер кошелька</strong>
+              </div>
+              <label class="toggle-row"
+                >Замены слов
+                <input
+                  type="checkbox"
+                  id="wordToggle"
+                  checked
+                  aria-label="Включить пример замен"
+              /></label>
+            </div>
+            <div class="feature-list">
+              <article>
+                <h3>Блокировка сайтов</h3>
+                <p>
+                  Встроенные списки букмекеров, казино и кейсов. Дополнительные домены
+                  можно добавить самостоятельно.
+                </p>
+              </article>
+              <article>
+                <h3>Маска на логотипе</h3>
+                <p>
+                  Выдели участок фото, видео или страницы. Размой его, закрась или закрой
+                  своей картинкой.
+                </p>
+              </article>
+              <article>
+                <h3>Свои слова и правила</h3>
+                <p>
+                  Редактируй замены слов и сохраняй области для каналов Twitch. Обработка
+                  Twitch включена по умолчанию.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="area-organization wrap">
+        <h2>Области по папкам</h2>
+        <p class="organization-intro">
+          Назови маски так, чтобы сразу находить нужную. Собери их в папки и переноси
+          несколько областей за один раз.
+        </p>
+        <div class="organization-grid">
+          <article>
+            <h3>Свои названия</h3>
+            <p>
+              Переименовывай области и папки. Поиск находит маски по названию, папке,
+              сайту, файлу или дате.
+            </p>
+          </article>
+          <article>
+            <h3>Перенос одним выбором</h3>
+            <p>
+              Отметь нужные области или выбери все и укажи папку. При удалении папки маски
+              остаются в «Без папки».
+            </p>
+          </article>
+          <article>
+            <h3>Всё в резервной копии</h3>
+            <p>
+              Экспортируй настройки, области и папки в JSON. Импорт восстанавливает
+              названия и распределение по папкам.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="try" class="playground wrap">
+        <h2>Заметил лого? Скрой.</h2>
+        <div class="play-tabs" aria-label="Демонстрации">
+          <button data-view="area" aria-pressed="true">Маски на видео</button
+          ><button data-view="words" aria-pressed="false">Замены слов</button
+          ><button data-view="profiles" aria-pressed="false">Профили Twitch</button>
+        </div>
+        <div id="areaView" class="play-view">
+          <div class="studio">
+            <div class="player-shell">
+              <div class="player-top">
+                <span class="live">В эфире</span><span>Вечерний стрим</span
+                ><span class="player-clock">00:42:18</span>
+              </div>
+              <div class="sample-video">
+                <div class="game-scene">
+                  <div class="game-sun"></div>
+                  <div class="game-ridge"></div>
+                  <div class="game-ridge near"></div>
+                  <span class="game-title">AFTER<br />HOURS</span>
+                </div>
+                <div id="sampleSponsor" aria-label="Пример рекламного баннера"></div>
+                <div class="video-caption">Хороший вечер без лишней рекламы</div>
+              </div>
+              <div class="player-bottom">
+                <span>Пауза</span>
+                <div></div>
+                <span>1080p</span><span>Звук включён</span>
+              </div>
+            </div>
+            <aside class="mask-panel">
+              <div class="panel-heading">
+                <img src="icon.png" width="28" height="28" alt="" /><strong
+                  >Область на видео</strong
+                >
+              </div>
+              <label for="maskMode">Чем закрыть</label
+              ><select id="maskMode">
+                <option value="blur">Размытие</option>
+                <option value="solid">Заливка</option>
+                <option value="image">Картинка СтопДЕП</option></select
+              ><label class="power-label" for="blurPower"
+                >Сила размытия<output id="powerNumber">12</output></label
+              ><input id="blurPower" type="range" min="2" max="24" value="12" /><button
+                id="applyMask"
+                type="button"
+              >
+                Применить размытие
+              </button>
+            </aside>
+          </div>
+        </div>
+        <div id="wordsView" class="play-view" hidden>
+          <div class="word-editor">
+            <img class="side-pet side-cat" src="wet-cat.png" alt="" loading="lazy" />
+            <div>
+              <label for="wordInput">Текст на странице</label
+              ><textarea id="wordInput" rows="4">
+Лига ставок и Upgrader предлагают бонус к депозиту.</textarea
+              >
+            </div>
+            <div>
+              <label for="wordResult">После включения СтопДЕП</label
+              ><output id="wordResult"></output>
+            </div>
+          </div>
+        </div>
+        <div id="profilesView" class="play-view" hidden>
+          <div class="profile-layout">
+            <img class="side-pet side-dog" src="suit-dog.png" alt="" loading="lazy" />
+            <div>
+              <p class="profile-label">Выбери канал</p>
+              <div class="channel-buttons">
+                <button data-channel="one" aria-pressed="true">
+                  <img class="avatar" src="bu5terenko.png" alt="" /><span
+                    >bu5terenko<small>Реклама слева</small></span
+                  ></button
+                ><button data-channel="two" aria-pressed="false">
+                  <img class="avatar second" src="sasich.png" alt="" /><span
+                    >sasich<small>Реклама справа</small></span
+                  >
+                </button>
+              </div>
+              <label class="profile-toggle"
+                >Закрывать рекламу<input id="profileEnabled" type="checkbox"
+              /></label>
+              <p id="profileFeedback" role="status"></p>
+            </div>
+            <div class="profile-player">
+              <div class="player-top">
+                <span class="live">В эфире</span
+                ><strong id="profileName">bu5terenko</strong>
+              </div>
+              <div class="profile-scene">
+                <div class="game-scene">
+                  <div class="game-sun"></div>
+                  <div class="game-ridge"></div>
+                  <div class="game-ridge near"></div>
+                </div>
+                <div id="profileAd" aria-label="Пример рекламного баннера"></div>
+                <span id="profileCover">Закрыто СтопДЕП</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="statement">
+        <div class="wrap">
+          <h2>Сохранили тебе<br /><span>деньги :3</span></h2>
+          <p>
+            Вместо сайта со ставками — картинка и вопрос, сколько ты собирался внести.
+            Выбранная сумма попадает в локальный счётчик СтопДЕП.
+          </p>
+          <div class="amounts" aria-label="Пример суммы">
+            <button data-amount="50">50 ₽</button><button data-amount="100">100 ₽</button
+            ><button data-amount="250">250 ₽</button
+            ><button data-amount="1000">1 000 ₽</button>
+          </div>
+          <output id="amountOutput" aria-live="polite">Попробуй выбрать сумму</output>
+        </div>
+      </section>
+      <section id="install" class="install wrap">
+        <h2>Установить СтопДЕП</h2>
+        <div class="install-grid">
+          <div>
+            <p>
+              Расширение пока устанавливается из ZIP. Папку после установки нужно
+              сохранить на компьютере.
+            </p>
+            <a class="button" href="StopDEP.zip" download>Скачать СтопДЕП</a>
+          </div>
+          <ol>
+            <li>
+              <strong>Распакуй архив</strong>
+              <p>В выбранной папке должен лежать manifest.json.</p>
+            </li>
+            <li>
+              <strong>Открой расширения браузера</strong>
+              <p><code>chrome://extensions</code> или <code>edge://extensions</code></p>
+            </li>
+            <li>
+              <strong>Включи режим разработчика</strong>
+              <p>Нажми «Загрузить распакованное расширение» и выбери папку СтопДЕП.</p>
+            </li>
+            <li>
+              <strong>Обнови открытые вкладки</strong>
+              <p>Закрепи СтопДЕП в панели браузера и выбери нужные фильтры.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="faq wrap">
+        <h2>Остались вопросы?</h2>
+        <details>
+          <summary>Можно ли закрыть часть картинки?</summary>
+          <p>
+            Да. Выбери файл в «Загруженных изображениях» или выдели область прямо на
+            странице.
+          </p>
+        </details>
+        <details>
+          <summary>Как разложить размытия по папкам?</summary>
+          <p>
+            Во вкладке «Области» создай папку. Отметь маски и выбери её в «Переместить
+            выбранные…». Для одной области можно выбрать папку прямо в её карточке.
+            Названия областей редактируются там же.
+          </p>
+        </details>
+        <details>
+          <summary>Что с другими расширениями Twitch?</summary>
+          <p>
+            Обработка Twitch включена по умолчанию. Если ты уже отключал её, твой выбор
+            сохранится. Переключатель находится в настройках. Для поиска конфликтов есть
+            диагностика.
+          </p>
+        </details>
+        <details>
+          <summary>Куда отправляются настройки?</summary>
+          <p>
+            Маски и параметры хранятся в профиле браузера. Картинки на странице блокировки
+            загружаются из Pinterest и зависят от его доступности.
+          </p>
+        </details>
+        <details>
+          <summary>Как обновить СтопДЕП?</summary>
+          <p>
+            Замени файлы в той же папке, нажми «Обновить» на карточке расширения и
+            перезагрузи вкладки.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="brand" href="#">СтопДЕП</a>
+      <p>Твой браузер. Твои правила.</p>
+      <small class="site-credit">by Mezets x GPT</small>
+    </footer>
+    <script src="main.js"></script>
+    <script src="enhancements.js"></script>
+    <script src="entrance.js"></script>
+  </body>
+</html>

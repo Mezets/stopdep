@@ -1,2 +1,46 @@
-
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>СтопДЕП</title><link rel="stylesheet" href="blocked.css"></head><body><main><img class="brand" src="icons/icon128.png" alt=""><h1>Сохранили тебе деньги :3</h1><div class="photo"><img id="cat" alt="Котик"><span id="fallback" hidden>Котик задерживается :3</span></div><button id="another">Другая картинка</button><section id="depositQuestion"><h2>Сколько ты собирался депнуть?</h2><div class="amounts"><button data-amount="50">50 ₽</button><button data-amount="100">100 ₽</button><button data-amount="250">250 ₽</button><button data-amount="1000">1 000 ₽</button><button id="customAmountButton">Своя сумма</button><button data-amount="0">Случайно тыкнул</button></div><form id="customAmountForm" hidden><label>Сумма в рублях<input id="customAmount" type="text" inputmode="decimal" required maxlength="12"></label><button type="submit">Сохранить</button></form></section><p id="depositAnswer" role="status"></p><footer><a href="https://t.me/mezets1337" target="_blank" rel="noopener noreferrer">ТГК создателя · @mezets1337</a><a id="source" target="_blank" rel="noopener noreferrer">Котик из Pinterest</a></footer></main><script src="blocked.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>СтопДЕП</title>
+    <link rel="stylesheet" href="blocked.css" />
+  </head>
+  <body>
+    <main>
+      <img class="brand" src="icons/icon128.png" alt="" />
+      <h1>Сохранили тебе деньги :3</h1>
+      <div class="photo">
+        <img id="cat" alt="Котик" /><span id="fallback" hidden
+          >Котик задерживается :3</span
+        >
+      </div>
+      <button id="another">Другая картинка</button>
+      <section id="depositQuestion">
+        <h2>Сколько ты собирался депнуть?</h2>
+        <div class="amounts">
+          <button data-amount="50">50 ₽</button><button data-amount="100">100 ₽</button
+          ><button data-amount="250">250 ₽</button
+          ><button data-amount="1000">1 000 ₽</button
+          ><button id="customAmountButton">Своя сумма</button
+          ><button data-amount="0">Случайно тыкнул</button>
+        </div>
+        <form id="customAmountForm" hidden>
+          <label
+            >Сумма в рублях<input
+              id="customAmount"
+              type="text"
+              inputmode="decimal"
+              required
+              maxlength="12" /></label
+          ><button type="submit">Сохранить</button>
+        </form>
+      </section>
+      <p id="depositAnswer" role="status"></p>
+      <footer>
+        <a id="source" target="_blank" rel="noopener noreferrer">Котик из Pinterest</a>
+      </footer>
+    </main>
+    <script src="blocked.js"></script>
+  </body>
+</html>

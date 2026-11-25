@@ -2133,14 +2133,25 @@
 :root.stopbk-bet.stopbk-banners a[href^="//www.duelbits.com/" i],
 :root.stopbk-bet.stopbk-banners a[href^="//www.duelbits.com?" i],
 :root.stopbk-bet.stopbk-banners a[href^="//www.duelbits.com#" i],
-:root.stopbk-bet.stopbk-banners a[href^="//www.duelbits.com:" i] {
+:root.stopbk-bet.stopbk-banners a[href^="//www.duelbits.com:" i]
+{
   display: none !important;
 }
 
-html.stopbk-banners.stopbk-cases [data-stopbk-search="cases"], html.stopbk-banners.stopbk-bet [data-stopbk-search="bet"] { display: none !important; }
+html.stopbk-banners.stopbk-cases [data-stopbk-search='cases'],
+html.stopbk-banners.stopbk-bet [data-stopbk-search='bet'] {
+  display: none !important;
+}
 
-html.stopbk-banners.stopbk-gambling [data-stopbk-search="gambling"] { display:none !important; }
+html.stopbk-banners.stopbk-gambling [data-stopbk-search='gambling'] {
+  display: none !important;
+}
 
-html.stopbk-bet.stopbk-banners .stopbk-bet-brand { display:inline-block; filter:blur(5px); }
+html.stopbk-bet.stopbk-banners .stopbk-bet-brand {
+  display: inline-block;
+  filter: blur(5px);
+}
 
-html.stopbk-bet.stopbk-banners .stopbk-bet-brand { filter:none !important; }
+html.stopbk-bet.stopbk-banners .stopbk-bet-brand {
+  filter: none !important;
+}

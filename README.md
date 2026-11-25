@@ -96,4 +96,3 @@
 
 В фильтрах используется [HaGeZi Gambling](https://github.com/hagezi/dns-blocklists#gambling). Сведения об источнике и лицензия списка находятся в `extension/HaGeZi-source.txt` и `extension/HaGeZi-LICENSE.txt`.
 
-Автор: [@mezets1337](https://t.me/mezets1337).

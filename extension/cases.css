@@ -1157,7 +1157,8 @@
 :root.stopbk-cases.stopbk-banners a[href^="//www.dota2cases.com/" i],
 :root.stopbk-cases.stopbk-banners a[href^="//www.dota2cases.com?" i],
 :root.stopbk-cases.stopbk-banners a[href^="//www.dota2cases.com#" i],
-:root.stopbk-cases.stopbk-banners a[href^="//www.dota2cases.com:" i] {
+:root.stopbk-cases.stopbk-banners a[href^="//www.dota2cases.com:" i]
+{
   display: none !important;
 }
 
@@ -1288,7 +1289,9 @@
 :root.stopbk-cases.stopbk-banners a[href^="//www.case-battle.tax#" i],
 :root.stopbk-cases.stopbk-banners a[href^="//www.case-battle.tax:" i],
 :root.stopbk-cases.stopbk-banners img[src*="case-battle.tax" i],
-:root.stopbk-cases.stopbk-banners img[srcset*="case-battle.tax" i] { display:none !important; }
+:root.stopbk-cases.stopbk-banners img[srcset*="case-battle.tax" i] {
+  display: none !important;
+}
 
 :root.stopbk-cases.stopbk-banners a[href="https://case-battle.art" i],
 :root.stopbk-cases.stopbk-banners a[href^="https://case-battle.art/" i],
@@ -1304,4 +1307,6 @@
 :root.stopbk-cases.stopbk-banners a[href^="https://jabka.to/" i],
 :root.stopbk-cases.stopbk-banners a[href="https://www.jabka.to" i],
 :root.stopbk-cases.stopbk-banners a[href^="https://www.jabka.to/" i],
-:root.stopbk-cases.stopbk-banners img[src*="jabka.to" i] { display:none !important; }
+:root.stopbk-cases.stopbk-banners img[src*="jabka.to" i] {
+  display: none !important;
+}
