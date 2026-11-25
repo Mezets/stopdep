@@ -1,4 +1,4 @@
-const english = {"Страница":"Page","Текущая страница":"Current page","Все страницы":"All pages",
+const english = {"Экспорт общих фильтров":"Export shared filters","Страница":"Page","Текущая страница":"Current page","Все страницы":"All pages",
 "Создать замазку":"Create a mask",
 "Сохранённые замазки":"Saved masks",
 "Скрытые блоки":"Hidden blocks",
@@ -132,6 +132,7 @@ const english = {"Страница":"Page","Текущая страница":"Cu
   'Область уже удалена.': 'This area has already been deleted.',
 };
 const releases = [
+['2.10.3','Добавили экспорт общих фильтров и обновление скрытых блоков с GitHub. Обновили слои замазок видео.','Added shared filter export and GitHub hidden block updates. Updated video mask layers.'],
 ['2.10.2','Добавили обрезку замазок над кнопками управления Twitch.','Added mask clipping above Twitch player controls.'],
 ['2.10.1','Исправили обновление положения замазок при смене режима плеера.','Fixed mask positioning updates when changing player modes.'],
 ['2.10.0','Заменили папки автоматическим списком страниц и каналов.','Replaced folders with an automatic page and channel list.'],

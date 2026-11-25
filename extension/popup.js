@@ -1348,3 +1348,15 @@ $('restoreBlocks').onclick = async () => {
 $('hiddenBlockScope').onchange=()=>renderHiddenBlocks().catch(error=>report(error.message));
 
 $('maskPageFilter').onchange=()=>refresh().catch(error=>report(error.message));
+
+$('exportPublicFilters').onclick=async()=>{
+ try{
+  const data=await chrome.storage.local.get(null);
+  const masks=Object.fromEntries(Object.entries(data).filter(([key])=>key.startsWith('mask:')).map(([key,value])=>{const mask=structuredClone(value);delete mask.folderId;const url=new URL(mask.page);mask.page=url.origin+url.pathname;return [key,mask];}));
+  const hiddenBlocks=(data.hiddenBlocks||[]).map(value=>{const rule=structuredClone(value);const url=new URL(rule.page);rule.page=url.origin+url.pathname;return rule;});
+  const backup={format:'stopdep-backup',version:1,settings:{hiddenBlocks},masks};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(backup,null,2)],{type:'application/json'}));
+  const link=document.createElement('a');link.href=url;link.download='StopDEP-public-filters-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);
+  report('Экспорт завершён. Файл содержит адреса страниц и картинки выбранных областей.');
+ }catch(error){report(error.message);}
+};

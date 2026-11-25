@@ -1,238 +1,86 @@
 {
   "format": "stopdep-community",
   "version": 1,
-  "revision": "2026-11-25.1",
-  "folders": [
-    {
-      "id": "9aa5d8c0-cfee-43d7-8f68-da1e97096e2b",
-      "name": "SLAY"
-    },
-    {
-      "id": "f980e710-da78-44a0-b30f-09146accf915",
-      "name": "Ladoga1337"
-    },
-    {
-      "id": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
-      "name": "derzko69"
-    },
-    {
-      "id": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
-      "name": "bratishkinOFF"
-    },
-    {
-      "id": "30b64d94-a618-4cc0-9412-b8664855ba0a",
-      "name": "leva2k"
-    },
-    {
-      "id": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
-      "name": "Nix"
-    },
-    {
-      "id": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
-      "name": "T2x2"
-    }
-  ],
+  "revision": "2026-11-25.2",
+  "folders": [],
   "masks": {
-    "mask:094bbced-ccb1-4809-bb80-d1e01f1ffc93": {
+    "mask:03854f73-2e7e-4aeb-8df7-b13a950a684c": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
-      "height": 0.10727969348659004,
+      "createdAt": 1795638351182,
+      "height": 0.10472541507024266,
       "image": null,
       "mode": "blur",
-      "page": "https://www.twitch.tv/derzko69",
+      "page": "https://www.twitch.tv/5opka",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
         "url": null
       },
       "strength": 48,
-      "width": 0.12428160919540229,
-      "x": 0.8757183908045977,
-      "y": 0.08812260536398467
+      "width": 0.11853448275862069,
+      "x": 0.014367816091954023,
+      "y": 0.5351213282247765
     },
-    "mask:0c09500c-b779-4308-81ea-21f5768181fd": {
-      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+    "mask:051b599a-25d5-45bd-bac6-aa65ab91c010": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "height": 0.047809680694159785,
+      "createdAt": 1795638625816,
+      "height": 0.10089399744572158,
       "image": null,
       "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-1.BP9cgKYN.webp"
-      },
-      "strength": 48,
-      "width": 0.06049610205527995,
-      "x": 0.5494596510046545,
-      "y": 0.4118413239603885
-    },
-    "mask:190df67d-740d-4f67-af36-6ac8ffced1eb": {
-      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.047809680694159785,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-4.C--sjgbx.webp"
-      },
-      "strength": 48,
-      "width": 0.03678817016875132,
-      "x": 0.4072120596854828,
-      "y": 0.6131936330377152
-    },
-    "mask:1e7de86d-899e-477b-a7d8-122b9a88c694": {
-      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.015936560231386596,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-1.BP9cgKYN.webp"
-      },
-      "strength": 48,
-      "width": 0.02289041699388971,
-      "x": 0.4521753787806233,
-      "y": 0.34932097228341025
-    },
-    "mask:262faf72-dc79-45d2-b8c0-17a662b92def": {
-      "anchor": "body:nth-child(2) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
-      "color": "#151515",
-      "height": 0.04199475065616798,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
+      "page": "https://www.twitch.tv/dangerlyoha",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
         "url": null
       },
       "strength": 48,
-      "width": 0.09501312335958005,
-      "x": 0.43832020997375326,
-      "y": 0.477525226013415
+      "width": 0.07183908045977011,
+      "x": 0.8807471264367817,
+      "y": 0.4904214559386973
     },
-    "mask:2926bdf4-2a56-47ea-b8d1-6cb716886020": {
+    "mask:06440a37-6286-46c3-9879-57ba6121e9c8": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
-      "height": 0.22349936143039592,
+      "createdAt": 1795623978599,
+      "height": 0.06130268199233716,
       "image": null,
       "mode": "blur",
-      "page": "https://www.twitch.tv/derzko69",
+      "page": "https://www.twitch.tv/mafanyaking",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
         "url": null
       },
       "strength": 48,
-      "width": 0.09051724137931035,
-      "x": 0.8951149425287356,
-      "y": 0.20561941251596424
+      "width": 0.08117816091954023,
+      "x": 0.0028735632183908046,
+      "y": 0.007662835249042145
     },
-    "mask:3ac7e207-d649-4cba-94f6-862f2a2e51eb": {
+    "mask:0b9e2f46-5f26-4f5c-81b6-f96dc2d6aa46": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "height": 0.3128991060025543,
+      "createdAt": 1795638377441,
+      "height": 0.1136653895274585,
       "image": null,
       "mode": "blur",
-      "page": "https://www.twitch.tv/rostikfacekid",
+      "page": "https://www.twitch.tv/synd1cat",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
         "url": null
       },
       "strength": 48,
-      "width": 0.09339080459770115,
-      "x": 0.9058908045977011,
-      "y": 0.1979565772669221
+      "width": 0.11135057471264367,
+      "x": 0.010775862068965518,
+      "y": 0.7343550446998723
     },
-    "mask:3ba4a98e-54af-4016-9346-704b7fda2c3c": {
-      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.06006857317984178,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-6.CXkCKU8L.webp"
-      },
-      "strength": 48,
-      "width": 0.04823337866569618,
-      "x": 0.7472982550232727,
-      "y": 0.2855747313578639
-    },
-    "mask:3e257e4d-b3a6-4d55-a74d-55d25b9b7ee8": {
+    "mask:186bf5a1-a18b-43da-b7d6-893f2e78a0a7": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "folderId": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
-      "height": 0.09182209469153517,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/t2x2",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.15333572453371594,
-      "x": 0.840163199426112,
-      "y": 0.22238163558106167
-    },
-    "mask:43800c65-cb27-4011-95d9-a4f6204e4513": {
-      "bitmapSize": {
-        "height": 57,
-        "width": 92
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.3377192982456141,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/metacorp.BVNB_CKq.svg"
-      },
-      "strength": 48,
-      "width": 0.9891304347826086,
-      "x": 0.010869565217391304,
-      "y": 0.6622807017543859
-    },
-    "mask:47a1a8e4-57db-4ca9-a5bc-1f2c1c7e06ef": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "blurVersion": 2,
-      "color": "#151515",
-      "folderId": "f980e710-da78-44a0-b30f-09146accf915",
-      "height": 0.11877394636015326,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.1257183908045977,
-      "x": 0.015086206896551725,
-      "y": 0.03065134099616858
-    },
-    "mask:48bc6c73-ede1-4078-bbb8-e1e86e2ee47a": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "folderId": "30b64d94-a618-4cc0-9412-b8664855ba0a",
-      "height": 0.28991060025542786,
+      "createdAt": 1795638648663,
+      "height": 0.10600255427841634,
       "image": null,
       "mode": "blur",
       "page": "https://www.twitch.tv/leva2k",
@@ -242,52 +90,15 @@
         "url": null
       },
       "strength": 48,
-      "width": 0.16163793103448276,
-      "x": 0.0028735632183908046,
-      "y": 0.04086845466155811
+      "width": 0.10704022988505747,
+      "x": 0.867816091954023,
+      "y": 0.8748403575989783
     },
-    "mask:56511e82-0257-48cc-ae44-4e23e7636185": {
+    "mask:221b3781-b8d7-4740-b2d1-85bb8dc46a5a": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "height": 0.15197956577266922,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/lagoda1337",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.08979885057471264,
-      "x": 0.9102011494252874,
-      "y": 0.010217113665389528
-    },
-    "mask:5dab08ca-869a-46e9-9a9d-4eaffc3a4442": {
-      "bitmapSize": {
-        "height": 1080,
-        "width": 1920
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.0582010582010582,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/hero-2560.CvykKcKc.webp"
-      },
-      "strength": 48,
-      "width": 0.13988095238095238,
-      "x": 0.4226190476190476,
-      "y": 0.4695767195767196
-    },
-    "mask:6f670437-9857-435e-be6f-bf06b209920c": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "folderId": "80d499d8-6fee-4d74-9dd7-19c11f4eedea",
-      "height": 0.08751793400286945,
+      "createdAt": 1795638515462,
+      "height": 0.08684546615581099,
       "image": null,
       "mode": "blur",
       "page": "https://www.twitch.tv/t2x2",
@@ -297,271 +108,54 @@
         "url": null
       },
       "strength": 48,
-      "width": 0.13235294117647062,
-      "x": 0.003272955523672819,
-      "y": 0.005738880918220882
-    },
-    "mask:7031e3b8-6e3b-41cf-8ec8-deab1e69e953": {
-      "bitmapSize": null,
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.06349206349206349,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "video",
-        "url": "https://static.slay-award.ru/a6d728ad/videos/hero.mp4"
-      },
-      "strength": 48,
-      "width": 0.11011904761904756,
-      "x": 0.43154761904761907,
-      "y": 0.4642857142857143
-    },
-    "mask:7236e2e8-b4e9-450b-9c88-a226aa54780e": {
-      "bitmapSize": {
-        "height": 82,
-        "width": 349
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.6840855106888362,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/winline.ClqRlpwq.webp"
-      },
-      "strength": 48,
-      "width": 0.6667596855960187,
-      "x": 0.09822798939584206,
-      "y": 0.16152019002375298
-    },
-    "mask:75e38fd7-6552-44aa-8eca-c3f814f83003": {
-      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.042906123699886986,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-6.CXkCKU8L.webp"
-      },
-      "strength": 48,
-      "width": 0.05477349780680752,
-      "x": 0.7456632252379949,
-      "y": 0.2969142069071197
-    },
-    "mask:7c285a97-882b-468d-8224-a36118586d1e": {
-      "anchor": "#swiper-wrapper-2774ddb3ed23d10a2 > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.014710670982818396,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a3daddbc/_astro/photo-4.C--sjgbx.webp"
-      },
-      "strength": 48,
-      "width": 0.025342961671806465,
-      "x": 0.4129346639339552,
-      "y": 0.6165648284712778
-    },
-    "mask:a27c5857-39d3-47f7-a2d8-c288d17fd5d6": {
-      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.02819545271706859,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-2.DFx0EUc3.webp"
-      },
-      "strength": 48,
-      "width": 0.02861302124236214,
-      "x": 0.4480878043174287,
-      "y": 0.6990058804374892
-    },
-    "mask:a740ccb3-e8dd-4f87-8ab8-7876b504ce57": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "height": 0.20945083014048532,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/sasavot",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.11063218390804598,
-      "x": 0.0028735632183908046,
-      "y": 0.5606641123882503
-    },
-    "mask:b2552e30-abeb-44df-9ad0-e8e1fa7f737d": {
-      "bitmapSize": {
-        "height": 1142,
-        "width": 2048
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.06938537236260528,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/new-ticker.B7DA-5c5.webp"
-      },
-      "strength": 48,
-      "width": 0.11011904761904756,
-      "x": 0.43154761904761907,
-      "y": 0.3349178550579601
-    },
-    "mask:b6d58fbf-4f37-4d36-933b-5eaee072c07e": {
-      "bitmapSize": {
-        "height": 110,
-        "width": 336
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.23636363636363636,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/preloader.BXfJmC26.webp"
-      },
-      "strength": 48,
-      "width": 0.3244047619047619,
-      "x": 0.30357142857142855,
-      "y": 0.06136363636363636
-    },
-    "mask:c5a705b9-f91a-43cd-a188-38cbcfefa8b7": {
-      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.06129446242840998,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-1.BP9cgKYN.webp"
-      },
-      "strength": 48,
-      "width": 0.06294864673319671,
-      "x": 0.5478246212193767,
-      "y": 0.4023406822839849
-    },
-    "mask:cc1ba403-4833-441b-a7e4-530ab800f582": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "folderId": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
-      "height": 0.24776500638569604,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/nix",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.09123563218390805,
-      "x": 0.9087643678160919,
-      "y": 0.02937420178799489
-    },
-    "mask:cf1559e5-16c3-4647-b104-4f0081736298": {
-      "bitmapSize": {
-        "height": 78,
-        "width": 308
-      },
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.8878205128205128,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/lunacy.B-YIHx4q.webp"
-      },
-      "strength": 48,
-      "width": 0.9967532467532467,
-      "x": 0.003246753246753247,
-      "y": 0.11217948717948718
-    },
-    "mask:d1aaa38f-4ff9-45e3-bc68-b8c0bc426d8e": {
-      "anchor": "#swiper-wrapper-aafc49f7d8b24cee > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
-      "color": "#151515",
-      "height": 0.018388338728522996,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "img",
-        "url": "https://static.slay-award.ru/a6d728ad/_astro/photo-1.BP9cgKYN.webp"
-      },
-      "strength": 48,
-      "width": 0.031065565920278895,
-      "x": 0.4489053192100676,
-      "y": 0.34594977684984773
-    },
-    "mask:e31faaab-ca28-4e08-8e06-b473db2c57fa": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "folderId": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
-      "height": 0.15197956577266922,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.13290229885057472,
-      "x": 0.8613505747126436,
-      "y": 0.1839080459770115
-    },
-    "mask:e4d69022-3d13-44b5-b7eb-9823ddce9ed0": {
-      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
-      "color": "#151515",
-      "folderId": "4fc5e442-c703-458f-ae4e-aad5297fda0f",
-      "height": 0.1251596424010217,
-      "image": null,
-      "mode": "blur",
-      "page": "https://www.twitch.tv/bratishkinoff",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.15445402298850575,
+      "width": 0.15301724137931033,
       "x": 0.8433908045977011,
-      "y": 0.6756066411238825
+      "y": 0.2260536398467433
     },
-    "mask:ef4410ef-b667-4a55-83d3-cc3141c25df4": {
+    "mask:3b8074f0-4982-49c4-9420-a3705afc805e": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "folderId": "0f9ae6f1-aca5-4b64-9dda-4ba82dd0a02e",
-      "height": 0.08812260536398467,
+      "createdAt": 1795638587362,
+      "height": 0.16091954022988506,
       "image": null,
       "mode": "blur",
-      "page": "https://www.twitch.tv/derzko69",
+      "page": "https://www.twitch.tv/mazellovvv",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.08261494252873564,
+      "x": 0.9137931034482759,
+      "y": 0.37292464878671777
+    },
+    "mask:40d7c422-902e-47d9-8f59-636b7d7fc59d": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638733679,
+      "height": 0.12005108556832694,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/by_owl",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11925287356321838,
+      "x": 0.8764367816091954,
+      "y": 0.8684546615581098
+    },
+    "mask:56773e61-ce0e-4a7c-9260-c6aba1f711d0": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638658594,
+      "height": 0.09195402298850575,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/leva2k",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
@@ -569,60 +163,760 @@
       },
       "strength": 48,
       "width": 0.1400862068965517,
-      "x": 0.004310344827586207,
+      "x": 0.0035919540229885057,
       "y": 0.007662835249042145
     },
-    "mask:f68218eb-ed37-438c-bb45-e1344c4e7c7f": {
-      "bitmapSize": null,
-      "blurVersion": 2,
-      "color": "#151515",
-      "height": 0.06349206349206349,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "source": {
-        "kind": "video",
-        "url": "https://static.slay-award.ru/a6d728ad/videos/hero-mobile.mp4"
-      },
-      "strength": 48,
-      "width": 0.0982142857142857,
-      "x": 0.4375,
-      "y": 0.4642857142857143
-    },
-    "mask:fa1e69eb-59c2-42ae-b5fb-af8a856a5a18": {
-      "anchor": "body:nth-child(3) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
-      "color": "#151515",
-      "height": 0.0662583843686206,
-      "image": null,
-      "mode": "blur",
-      "page": "https://slay-award.ru/",
-      "pageOnly": true,
-      "source": {
-        "kind": "video-player",
-        "url": null
-      },
-      "strength": 48,
-      "width": 0.13070866141732285,
-      "x": 0.42992125984251967,
-      "y": 0.46819305920093324
-    },
-    "mask:faf69eb3-0eee-4cb6-a6f1-cc50a7bc684d": {
+    "mask:5867e42f-7799-4366-9176-425e3d532dfb": {
       "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
       "color": "#151515",
-      "folderId": "dfb1e85a-a6ba-4fc6-94fb-25dc2bc0a1a9",
-      "height": 0.0970625798212005,
+      "createdAt": 1795637621530,
+      "height": 0.12643678160919541,
       "image": null,
       "mode": "blur",
-      "page": "https://www.twitch.tv/nix",
+      "page": "https://www.twitch.tv/5opka",
       "pageOnly": true,
       "source": {
         "kind": "video-player",
         "url": null
       },
       "strength": 48,
-      "width": 0.14798850574712644,
-      "x": 0.8477011494252874,
-      "y": 0.4521072796934866
+      "width": 0.09770114942528736,
+      "x": 0.8972701149425287,
+      "y": 0.8710089399744572
+    },
+    "mask:5b2980ef-e8e1-41c5-a11a-1c57d55b58c3": {
+      "bitmapSize": {
+        "height": 110,
+        "width": 336
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "createdAt": 1795636616608,
+      "height": 0.2167821401077752,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/preloader.BXfJmC26.webp"
+      },
+      "strength": 48,
+      "width": 0.30646705983164474,
+      "x": 0.3129189979333636,
+      "y": 0.061585835257890686
+    },
+    "mask:5c745645-6848-40c4-8deb-246116bea858": {
+      "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795636687692,
+      "height": 0.04903556994272799,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/photo-6.CXkCKU8L.webp"
+      },
+      "strength": 48,
+      "width": 0.04578083398777942,
+      "x": 0.7464807401306338,
+      "y": 0.2944624284099833
+    },
+    "mask:61c46d42-cac4-40da-a637-27abd9a7bd5f": {
+      "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795636662092,
+      "height": 0.019614227977091194,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.01962035742333404,
+      "x": 0.45462792345854003,
+      "y": 0.34840155534698414
+    },
+    "mask:62783ac6-5175-4374-aace-4e75d0002bda": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795615342079,
+      "height": 0.11749680715197956,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11709770114942529,
+      "x": 0.020114942528735632,
+      "y": 0.034482758620689655
+    },
+    "mask:63cf4a13-6fc2-4b7c-8b69-ab67f56467e5": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795624608416,
+      "height": 0.1136653895274585,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11925287356321838,
+      "x": 0.8692528735632183,
+      "y": 0.21583652618135377
+    },
+    "mask:65790287-7858-499b-ba19-44039163dd4e": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638561880,
+      "height": 0.1392081736909323,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/t2x2",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.05387931034482758,
+      "x": 0.9367816091954023,
+      "y": 0.6283524904214559
+    },
+    "mask:662094d6-b9a1-4bb5-a53a-cd43593b5fd0": {
+      "bitmapSize": {
+        "height": 82,
+        "width": 349
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "createdAt": 1795636621479,
+      "height": 0.5629693198884359,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/winline.ClqRlpwq.webp"
+      },
+      "strength": 48,
+      "width": 0.6839743912890055,
+      "x": 0.09033624035892523,
+      "y": 0.223128084102124
+    },
+    "mask:68fdcff0-091c-4a91-aab2-b75b6be5ac71": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795624614020,
+      "height": 0.09323116219667944,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.12931034482758622,
+      "x": 0.8692528735632183,
+      "y": 0.6973180076628352
+    },
+    "mask:6afb6631-9792-46f0-9b77-b390c67c4c2b": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638552825,
+      "height": 0.070242656449553,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/t2x2",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.1271551724137931,
+      "x": 0.0035919540229885057,
+      "y": 0.019157088122605363
+    },
+    "mask:6e063a19-4f94-40f2-a5ff-6a078c9b1591": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638600606,
+      "height": 0.10089399744572158,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/lenyapudge",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.1221264367816092,
+      "x": 0.020114942528735632,
+      "y": 0.033205619412515965
+    },
+    "mask:7386d0d1-be63-458c-afbc-ad6af80044d7": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638674078,
+      "height": 0.10217113665389528,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/recrent",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.15589080459770116,
+      "x": 0.010775862068965518,
+      "y": 0.6590038314176245
+    },
+    "mask:7a7d594e-36a8-4327-b970-a9f11222e41d": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638582781,
+      "height": 0.08939974457215837,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/mazellovvv",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.13505747126436782,
+      "x": 0.0014367816091954023,
+      "y": 0.4061302681992337
+    },
+    "mask:7bb28951-091a-410e-83c4-8aff5287d81a": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638680783,
+      "height": 0.09961685823754789,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/recrent",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11566091954022989,
+      "x": 0.8829022988505747,
+      "y": 0.4444444444444444
+    },
+    "mask:832f2990-04fd-4bd3-9682-6c323e2574ff": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795615336928,
+      "height": 0.1532567049808429,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09913793103448276,
+      "x": 0.8987068965517241,
+      "y": 0.010217113665389528
+    },
+    "mask:950fcfba-c054-493d-95fc-7e762b5a7e6f": {
+      "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795636667657,
+      "height": 0.05148734843986438,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/photo-1.BP9cgKYN.webp"
+      },
+      "strength": 48,
+      "width": 0.06540119141111346,
+      "x": 0.5453720765414599,
+      "y": 0.4121477962725305
+    },
+    "mask:98e74408-59f3-4e50-a9d6-3212983c7ad3": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795623985920,
+      "height": 0.06768837803320563,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09195402298850575,
+      "x": 0.9066091954022989,
+      "y": 0.016602809706257982
+    },
+    "mask:9f677797-55b0-4b08-8aac-2c6cf62b08b9": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638370386,
+      "height": 0.06513409961685823,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/synd1cat",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.11063218390804598,
+      "x": 0.01221264367816092,
+      "y": 0.6551724137931034
+    },
+    "mask:b693c638-a5cf-40c0-9a3c-73880f1e8d3b": {
+      "bitmapSize": {
+        "height": 1080,
+        "width": 1920
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "createdAt": 1795636627946,
+      "height": 0.05161290322580653,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/hero-2560.CvykKcKc.webp"
+      },
+      "strength": 48,
+      "width": 0.10322580645161289,
+      "x": 0.43548387096774194,
+      "y": 0.47168458781362005
+    },
+    "mask:ba541d81-3c7b-4112-828e-5a6b3948aa0f": {
+      "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795636679468,
+      "height": 0.019614227977091194,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/photo-4.C--sjgbx.webp"
+      },
+      "strength": 48,
+      "width": 0.021255387208611875,
+      "x": 0.4162047235045109,
+      "y": 0.6082900760434424
+    },
+    "mask:d497f24f-9f5f-4b2b-84ba-1f7b58ea26c7": {
+      "anchor": "body:nth-child(2) > main:nth-child(6) > section:nth-child(1) > div:nth-child(1) > video:nth-child(2)",
+      "color": "#151515",
+      "createdAt": 1795636650742,
+      "height": 0.037328667249927096,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.09133858267716535,
+      "x": 0.441994750656168,
+      "y": 0.4821913094196559
+    },
+    "mask:e1a8439d-1654-4344-860a-df9adf896fe0": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795623996705,
+      "height": 0.04725415070242656,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.07255747126436782,
+      "x": 0.9245689655172413,
+      "y": 0.10217113665389528
+    },
+    "mask:e5a8158d-7083-495c-8be8-697ec69549ce": {
+      "bitmapSize": {
+        "height": 1142,
+        "width": 2048
+      },
+      "blurVersion": 2,
+      "color": "#151515",
+      "createdAt": 1795636639412,
+      "height": 0.06363554189641146,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/new-ticker.B7DA-5c5.webp"
+      },
+      "strength": 48,
+      "width": 0.08387519532234489,
+      "x": 0.4355058218660215,
+      "y": 0.3311940703245051
+    },
+    "mask:f061c19b-7eba-4685-b644-63a5efa6c964": {
+      "anchor": "#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > video:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795638727791,
+      "height": 0.1111111111111111,
+      "image": null,
+      "mode": "blur",
+      "page": "https://www.twitch.tv/by_owl",
+      "pageOnly": true,
+      "source": {
+        "kind": "video-player",
+        "url": null
+      },
+      "strength": 48,
+      "width": 0.07183908045977011,
+      "x": 0.9202586206896551,
+      "y": 0.035759897828863345
+    },
+    "mask:fe2d3610-5988-40af-a95c-9f5efb74b1b0": {
+      "anchor": "#swiper-wrapper-4c627d5873443e4d > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)",
+      "color": "#151515",
+      "createdAt": 1795636673261,
+      "height": 0.04413201294845519,
+      "image": null,
+      "mode": "blur",
+      "page": "https://slay-award.ru/",
+      "pageOnly": true,
+      "source": {
+        "kind": "img",
+        "url": "https://static.slay-award.ru/3d6255f4/_astro/photo-2.DFx0EUc3.webp"
+      },
+      "strength": 48,
+      "width": 0.03924071484666808,
+      "x": 0.43582508092784494,
+      "y": 0.69165054494608
     }
-  }
+  },
+  "hiddenBlocks": [
+    {
+      "createdAt": 1795615348965,
+      "id": "65d28cde-8e11-4b92-8872-d969f49235e6",
+      "image": "https://panels.twitch.tv/panel-71089431-image-7f49b0ee-0e12-4540-b024-81493a60adb3",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795615351106,
+      "id": "bc1e385a-fe37-4a93-83de-41b0e3053a47",
+      "image": "https://panels.twitch.tv/panel-71089431-image-86ea94c6-77fc-43ea-805c-55775037126b",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795615353764,
+      "id": "e7e7e533-2073-455f-963a-6e8028aa4527",
+      "image": "https://panels.twitch.tv/panel-71089431-image-744935ce-5d67-4fc6-8c11-42fd0fd5b12b",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795615357241,
+      "id": "638660e4-b204-49e9-8438-f37ea51e08bd",
+      "image": "https://panels.twitch.tv/panel-71089431-image-96bc82e6-74a6-4b2b-a67e-57e80d484220",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795615360844,
+      "id": "0e1e916a-fd3d-4c27-820c-0870604d663d",
+      "image": "https://panels.twitch.tv/panel-71089431-image-d09ef057-5e4c-49ce-b283-df9631efa0a7",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lagoda1337",
+      "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795623864535,
+      "id": "8fcbf966-7cbc-44a1-a638-40426b913106",
+      "image": "https://panels.twitch.tv/panel-523836820-image-186d5876-612b-4900-9d25-37d83668bdf5",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795623866528,
+      "id": "1039e47b-8285-4002-b729-df090dd36b20",
+      "image": "https://panels.twitch.tv/panel-523836820-image-336a56f9-0f39-4873-98e6-ea945010b58a",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795623868377,
+      "id": "512b2f79-1922-4ede-b2f0-80f9614bcfb4",
+      "image": "https://panels.twitch.tv/panel-523836820-image-936206c4-d2e1-4e7e-b8a6-d511c9164cfb",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795623870865,
+      "id": "f793bc90-ee9b-4a83-8c74-745829b8eddd",
+      "image": "https://panels.twitch.tv/panel-523836820-image-c8b9c4cb-c808-4f0c-8bbb-f24447ae8a59",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/mafanyaking",
+      "selector": "[data-a-target=\"panel-8\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795624619823,
+      "id": "011797e7-1340-4f47-999a-c186fe21bde2",
+      "image": "https://panels.twitch.tv/panel-99899949-image-9b01b12a-ea59-4fb3-bd22-b500f5b5cc47",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795624621914,
+      "id": "7a146138-1069-4cf0-8f84-7e685cd5d840",
+      "image": "https://panels.twitch.tv/panel-99899949-image-93a86541-2eb4-4ecb-8b56-3bc0117f3a0d",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795624624165,
+      "id": "cb45ca50-3142-440e-9179-5fc1f4041f1f",
+      "image": "https://panels.twitch.tv/panel-99899949-image-7c0cbb88-c302-4744-a0fe-edb0b5e60aef",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795635847594,
+      "id": "b1d74100-0dce-49cf-93ef-c37de253989a",
+      "image": "https://panels.twitch.tv/panel-99899949-image-f387ebc4-2f0b-49a4-b363-d2afd4e270de",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/bratishkinoff",
+      "selector": "[data-a-target=\"panel-5\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795636766135,
+      "id": "c7bc7c64-0a4f-47b7-94a5-18e48138c892",
+      "image": "https://panels.twitch.tv/panel-32155044-image-884ad95e-1c1e-4a73-a3a9-44952c30c1b5",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/5opka",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795636769050,
+      "id": "de5720e1-708e-4372-a7db-2019571cfd16",
+      "image": "https://panels.twitch.tv/panel-32155044-image-8d54a2ab-1dc3-4518-bf0b-1fc6e659b7c4",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/5opka",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638361123,
+      "id": "e97836c1-e0bf-4b2b-a601-f5be941358d4",
+      "image": "https://panels.twitch.tv/panel-90185887-image-6ef6d2d7-dca6-4c53-8e59-d7285e8d3dd2",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/synd1cat",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638363754,
+      "id": "f1e352a2-60a8-4431-a1f0-491a2a53bed7",
+      "image": "https://panels.twitch.tv/panel-90185887-image-ab30a27d-86d3-4756-9714-df72e6dd5cf9",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/synd1cat",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638387829,
+      "id": "b7cc50f3-3fa0-4730-8fee-345a73befa23",
+      "image": "https://panels.twitch.tv/panel-48189727-image-79c2303d-cbe0-4a9d-86cd-12c2ff110e01",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/t2x2",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638519729,
+      "id": "258f783a-2332-45d0-8efb-29ef506bae6c",
+      "image": "https://panels.twitch.tv/panel-48189727-image-2d80f416-2c07-420a-923c-6f57df6d37a2",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/t2x2",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638573009,
+      "id": "a4fa8c44-33eb-4c4e-a30d-837598b84ae1",
+      "image": "https://panels.twitch.tv/panel-270698079-image-ad55da2e-a27a-4eaf-8897-74d797a942fe",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/mazellovvv",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638595116,
+      "id": "d238b4a9-51d6-469e-8cf3-74de69ec26ef",
+      "image": "https://panels.twitch.tv/panel-465532551-image-a7312eab-ad2a-45a5-9890-4718576b45cd",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/lenyapudge",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638620306,
+      "id": "b2eac40a-0a01-4b39-8e5c-2007e6a39133",
+      "image": "https://panels.twitch.tv/panel-402093335-image-c05f4062-d12e-4fdc-8ed2-75c431191362",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/dangerlyoha",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638635432,
+      "id": "39633fe8-d1d0-4093-b6f4-a319b523915c",
+      "image": "https://panels.twitch.tv/panel-162757011-image-735b95cf-f490-43be-80a2-8d08193619fa",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/leva2k",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638637556,
+      "id": "4437cd45-ab95-4890-94d7-a5ba95bbf418",
+      "image": "https://panels.twitch.tv/panel-162757011-image-a9ac5eb9-c095-4fe4-a704-4a7de77e1fda",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/leva2k",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638640002,
+      "id": "1760f48d-bad9-4907-ada6-c56d060d42c5",
+      "image": "https://panels.twitch.tv/panel-162757011-image-30af7f62-5cc5-42e6-8fe5-403c38d3b064",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/leva2k",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638641945,
+      "id": "be2e7b7b-e7c1-4600-91ec-98788b5e1654",
+      "image": "https://panels.twitch.tv/panel-162757011-image-40d67fe8-b896-4edc-84f7-b2307b914c99",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/leva2k",
+      "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638644086,
+      "id": "8a1b75b3-b077-4d8a-84e1-608a6065757b",
+      "image": "https://panels.twitch.tv/panel-162757011-image-1556c0ed-73e7-407b-9b91-c768b3dd2d28",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/leva2k",
+      "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638685737,
+      "id": "4dffbc65-ecf2-4fd1-94f0-32c0cd25919a",
+      "image": "https://panels.twitch.tv/panel-39154778-image-28fd5675-53cb-4b5d-bf67-cd10964f50b1",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/recrent",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638689126,
+      "id": "aaf2071e-2e55-42a5-89d7-a815790ddbac",
+      "image": "https://panels.twitch.tv/panel-39154778-image-31f38eb0-4147-40de-9af5-62ee963b503e",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/recrent",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638692730,
+      "id": "4057ec33-7366-404b-9f02-24012f09d043",
+      "image": "https://panels.twitch.tv/panel-39154778-image-789dd406-9f78-4059-959b-8ee69d1016bc",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/recrent",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638695471,
+      "id": "993c8905-bdbf-41c7-95ab-b851ee217bb3",
+      "image": "https://panels.twitch.tv/panel-39154778-image-e851f72b-23b4-437f-8e4e-efe8f31289a0",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/recrent",
+      "selector": "[data-a-target=\"panel-3\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638712048,
+      "id": "d23259f8-ea7a-454f-aa76-1ada1f53c2aa",
+      "image": "https://panels.twitch.tv/panel-47966045-image-7b2d7b3c-575b-4776-b50c-baa73c79fbf5",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/by_owl",
+      "selector": "[data-a-target=\"panel-0\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638714075,
+      "id": "642d6929-94d5-4bea-a541-ff5d7815c0d0",
+      "image": "https://panels.twitch.tv/panel-47966045-image-4350759e-ecc4-4361-8877-e614c0bf9add",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/by_owl",
+      "selector": "[data-a-target=\"panel-1\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638716031,
+      "id": "6f159c13-3b89-4300-bfd2-981c062d58db",
+      "image": "https://panels.twitch.tv/panel-47966045-image-deba7e77-5f57-45f1-bea8-6adec6e28b78",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/by_owl",
+      "selector": "[data-a-target=\"panel-2\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    },
+    {
+      "createdAt": 1795638718993,
+      "id": "7f2f1b1b-e14b-4e8f-acbc-33ee1866404d",
+      "image": "https://panels.twitch.tv/panel-47966045-image-278f01ad-1e41-44e1-9f2d-0a3210abc9bb",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/by_owl",
+      "selector": "[data-test-selector=\"masonry_container_selector\"] > div:nth-of-type(4)"
+    },
+    {
+      "createdAt": 1795638721634,
+      "id": "7d9c7f2d-0fa4-46e2-8294-9a27ef9a936b",
+      "image": "https://panels.twitch.tv/panel-47966045-image-dcb4e27c-c7e7-4025-b1a9-b25e9e2207a3",
+      "label": "Содержимое панели",
+      "page": "https://www.twitch.tv/by_owl",
+      "selector": "[data-a-target=\"panel-4\"] > [data-test-selector=\"link_url_test_selector\"] > [data-test-selector=\"image_test_selector\"]"
+    }
+  ]
 }

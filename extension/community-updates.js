@@ -41,6 +41,7 @@ function validCommunity(data) {
       folder.name.length > 100
     )
       throw Error('Invalid folder');
+  if(data.hiddenBlocks && (!Array.isArray(data.hiddenBlocks)||data.hiddenBlocks.length>2000||data.hiddenBlocks.some(r=>!r||typeof r.id!=="string"||typeof r.selector!=="string"||r.selector.length>4000||!/^https:\/\/(www\.)?twitch\.tv\//.test(r.page))))throw Error("Invalid hidden blocks");
   return data;
 }
 async function mergeCommunity(preset) {
@@ -63,6 +64,13 @@ async function mergeCommunity(preset) {
       managed[key] = fingerprint;
     } else if (JSON.stringify(existing) === fingerprint) managed[key] = fingerprint;
   }
+  const previousBlocks=local.communityManagedBlocks||{};
+  const currentBlocks=new Map((local.hiddenBlocks||[]).map(rule=>[rule.id,rule]));
+  const managedBlocks={...previousBlocks};
+  for(const rule of preset.hiddenBlocks||[]){const existing=currentBlocks.get(rule.id);if(rule.id in previousBlocks){if(existing&&JSON.stringify(existing)===previousBlocks[rule.id]){currentBlocks.set(rule.id,rule);managedBlocks[rule.id]=JSON.stringify(rule);}}else if(!existing){currentBlocks.set(rule.id,rule);managedBlocks[rule.id]=JSON.stringify(rule);}}
+  const incomingIds=new Set((preset.hiddenBlocks||[]).map(r=>r.id));
+  for(const id of Object.keys(previousBlocks))if(!incomingIds.has(id)){if(currentBlocks.has(id)&&JSON.stringify(currentBlocks.get(id))===previousBlocks[id])currentBlocks.delete(id);delete managedBlocks[id];}
+  changes.hiddenBlocks=[...currentBlocks.values()];changes.communityManagedBlocks=managedBlocks;
   const removed = [];
   for (const key of Object.keys(previous))
     if (!(key in preset.masks)) {
