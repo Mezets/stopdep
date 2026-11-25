@@ -3,6 +3,11 @@ function start(root) {
   host.style.cssText =
     'all:initial!important;position:fixed!important;inset:0!important;pointer-events:none!important;z-index:2147483647!important';
   const shadow = host.attachShadow({ mode: 'closed' });
+  if(/(^|\.)twitch\.tv$/.test(location.hostname)){
+    const playerLayers=document.createElement('style');
+    playerLayers.textContent='[data-a-target="video-player"] .video-ref:has([data-stopdep-video-mask]){isolation:isolate!important;z-index:0!important}[data-a-target="video-player"] .video-player__overlay{z-index:2!important}';
+    (document.head||document.documentElement).append(playerLayers);
+  }
   const maskLayer = document.createElement('div');
   shadow.append(maskLayer);
   let settings = {};
@@ -294,7 +299,7 @@ function start(root) {
           layer.style.filter = 'blur(' + blurStrength(mask) + 'px)';
         }
         const { x, y, width, height } = bounds;
-        const insets = [y, 1 - x - width, 1 - y - height, x];
+    const insets = [y, 1 - x - width, 1 - y - height, x];
         layer.style.backgroundColor = coverColor(mask);
         layer.style.clipPath =
           'inset(' +
@@ -590,11 +595,23 @@ function start(root) {
         node.hidden = true;
         continue;
       }
-      if (videoOverlay && conceal) {
-        node.style.background = mask.mode === 'solid' ? coverColor(mask) : 'transparent';
-        node.style.backdropFilter =
-          mask.mode === 'blur' ? 'blur(' + blurStrength(mask) + 'px)' : 'none';
+      if (videoOverlay) {
+        const surface=anchor.parentElement;
+        if(surface){
+          if(node.parentElement!==surface)surface.append(node);
+          node.dataset.stopdepVideoMask='true';
+          const origin=surface.getBoundingClientRect();
+          node.style.position='absolute';node.style.zIndex='1';
+          node.style.pointerEvents='none';
+          node.style.left=(left-origin.left-surface.clientLeft)+'px';
+          node.style.top=(top-origin.top-surface.clientTop)+'px';
+          node.style.width=width+'px';node.style.height=height+'px';
+          if(conceal){node.style.background=mask.mode==='solid'?coverColor(mask):'rgb(0 0 0 / 10%)';node.style.backdropFilter=mask.mode==='blur'?'blur('+blurStrength(mask)+'px) brightness(.72) contrast(.75)':'none';}
+          node.style.clipPath='inset('+[Math.max(0,rect.top-top),Math.max(0,left+width-rect.right),Math.max(0,top+height-rect.bottom),Math.max(0,rect.left-left)].map(v=>v+'px').join(' ')+')';
+          continue;
+        }
       }
+      if(node.dataset.stopdepVideoMask){delete node.dataset.stopdepVideoMask;maskLayer.append(node);node.style.position='fixed';node.style.zIndex='';}
       needsScrollLayout = true;
       node.style.left = left + 'px';
       node.style.top = top + 'px';
@@ -1035,6 +1052,14 @@ function start(root) {
         );
       }
     }
+    if(isTwitch){
+      for(const player of document.querySelectorAll('[data-a-target="video-player"]')){
+        const bounds=player.getBoundingClientRect();
+        if(!bounds.width||!bounds.height||left>=bounds.right||left+width<=bounds.left||top>=bounds.bottom||top+height<=bounds.top)continue;
+        const controls=player.querySelectorAll('.player-controls__right-control-group,.player-controls__left-control-group,[data-a-target="player-play-pause-button"],[data-a-target="player-fullscreen-button"],[data-a-target="player-settings-menu"],[data-a-target="player-settings-menu-container"],[role="menu"],[role="dialog"],.player-settings__menu');
+        for(const control of controls){const box=control.getBoundingClientRect();if(!box.width||!box.height||getComputedStyle(control).visibility==='hidden')continue;if(box.top<top+height&&box.bottom>top)visibleBottom=Math.min(visibleBottom,box.top-6);}
+      }
+    }
     const insets = [
       visibleTop - top,
       left + width - visibleRight,
@@ -1196,6 +1221,11 @@ function start(root) {
   if (window === top) {
     addEventListener('scroll', handleScroll, { capture: true, passive: true });
     addEventListener('resize', queueLayout);
+    if(isTwitch)document.addEventListener('pointermove',event=>{if(event.target instanceof Element&&event.target.closest('[data-a-target="video-player"]'))queueLayout();},{passive:true});
+    if(isTwitch){
+      document.addEventListener('pointermove',event=>{if(event.target instanceof Element&&event.target.closest('[data-a-target="video-player"],.video-player'))queueLayout();},{passive:true});
+      document.addEventListener('pointerleave',()=>{queueLayout();setTimeout(queueLayout,350);},true);
+    }
     function playerModeChanged(){
       attachHost();sourceCache.clear();render();queueLayout();
       setTimeout(queueLayout,80);setTimeout(queueLayout,300);

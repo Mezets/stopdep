@@ -132,6 +132,7 @@ const english = {"Страница":"Page","Текущая страница":"Cu
   'Область уже удалена.': 'This area has already been deleted.',
 };
 const releases = [
+['2.10.2','Добавили обрезку замазок над кнопками управления Twitch.','Added mask clipping above Twitch player controls.'],
 ['2.10.1','Исправили обновление положения замазок при смене режима плеера.','Fixed mask positioning updates when changing player modes.'],
 ['2.10.0','Заменили папки автоматическим списком страниц и каналов.','Replaced folders with an automatic page and channel list.'],
 ['2.9.9','Добавили отдельный сброс замазок, блоков, замен и сайтов в настройках.','Added separate resets for masks, blocks, replacements and custom sites in Settings.'],
